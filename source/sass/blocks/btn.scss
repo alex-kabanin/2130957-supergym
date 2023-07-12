@@ -1,17 +1,20 @@
+@use "../variables";
+@use "../mixins";
+
 .btn {
   display: inline-flex;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  color: variables.$color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: variables.$color-neon-blue;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  transition: opacity variables.$trans-default;
 
   &--red {
-    background-color: $color-torch-red;
+    background-color: variables.$color-torch-red;
   }
 
   &:disabled {
@@ -20,7 +23,7 @@
     pointer-events: none;
   }
 
-  @include hover-focus {
+  @include mixins.hover-focus {
     opacity: 0.8;
   }
 }

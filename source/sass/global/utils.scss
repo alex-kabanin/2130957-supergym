@@ -1,3 +1,5 @@
+@use "../variables";
+
 .wrapper {
   position: relative;
 
@@ -18,7 +20,7 @@
 }
 
 .rouble {
-  font-family: $ff-rouble;
+  font-family: variables.$ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;
