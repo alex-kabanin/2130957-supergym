@@ -1,0 +1,58 @@
+@use "../mixins";
+@use "../variables";
+
+.navigation {
+
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation__link {
+  display: block;
+  font-size: 26px;
+  font-family: variables.$ff-title;
+  line-height: 31px;
+  font-weight: 600;
+  color: currentColor;
+  letter-spacing: .03em;
+  transition: all variables.$trans-default;
+
+  @include mixins.hover {
+    opacity: 0.8;
+  }
+  @include mixins.focus {
+    opacity: 0.8;
+  }
+
+  @include mixins.active {
+    opacity: 0.5;
+  }
+
+  @include mixins.vp-tablet {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  @include mixins.vp-mobile {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+.navigation__icon {
+  @include mixins.vp-tablet {
+    width: 82px;
+  }
+
+  @include mixins.vp-mobile {
+    width: 69px;
+  }
+}

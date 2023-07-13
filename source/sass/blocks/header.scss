@@ -1,0 +1,18 @@
+@use "../variables";
+@use "../mixins";
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  color: variables.$color-default-white;
+
+  @include mixins.vp-tablet {
+    padding: 40px 0;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 15px 0;
+  }
+}

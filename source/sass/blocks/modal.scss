@@ -43,7 +43,7 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include mixins.vp-767 {
+    @include mixins.vp-mobile{
       padding: 60px 16px;
     }
   }
@@ -67,7 +67,7 @@
 
     background-color: variables.$color-default-white;
 
-    @include mixins.vp-767 {
+    @include mixins.vp-mobile {
       width: 100%;
       padding: 20px;
     }
@@ -98,7 +98,7 @@
     .modal__content {
       width: auto;
 
-      @include mixins.vp-767 {
+      @include mixins.vp-mobile {
         width: 100%;
       }
     }

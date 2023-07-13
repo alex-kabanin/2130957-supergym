@@ -314,6 +314,10 @@ template {
   display: none;
 }
 
+a:not([href]) {
+  pointer-events: none;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 300;
@@ -557,23 +561,18 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -1243,6 +1242,89 @@ button,
   font-weight: 300;
   color: #102654;
   background-color: #ffffff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .header {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.navigation__link {
+  display: block;
+  font-size: 26px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  line-height: 31px;
+  font-weight: 600;
+  color: currentColor;
+  letter-spacing: 0.03em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (hover: hover) {
+  .navigation__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+}
+.navigation__link.focus-visible:focus {
+  opacity: 0.8;
+}
+.navigation__link.focus-visible:active {
+  opacity: 0.5;
+}
+@media (max-width: 1199px) {
+  .navigation__link {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__link {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navigation__icon {
+    width: 82px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__icon {
+    width: 69px;
+  }
+}
+
+.hero {
+  padding: 51px 0;
+  background-image: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.2363382578deg, #B80027 313.3060026169deg);
 }
 
 /* @mixin hover-focus {
