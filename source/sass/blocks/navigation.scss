@@ -23,14 +23,16 @@
   letter-spacing: .03em;
   transition: all variables.$trans-default;
 
-  @include mixins.hover {
-    opacity: 0.8;
-  }
-  @include mixins.focus {
+  &:hover {
     opacity: 0.8;
   }
 
-  @include mixins.active {
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
     opacity: 0.5;
   }
 

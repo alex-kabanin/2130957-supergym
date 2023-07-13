@@ -1285,15 +1285,14 @@ button,
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-@media (hover: hover) {
-  .navigation__link:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.navigation__link.focus-visible:focus {
+.navigation__link:hover {
   opacity: 0.8;
 }
-.navigation__link.focus-visible:active {
+.navigation__link:focus {
+  opacity: 0.8;
+  outline: none;
+}
+.navigation__link:active {
   opacity: 0.5;
 }
 @media (max-width: 1199px) {
