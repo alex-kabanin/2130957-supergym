@@ -16,4 +16,15 @@
   height: 25px;
   background-color: variables.$color-default-white;
   border-radius: 50%;
+  transition: all variables.$trans-default;
+
+  &:hover, &:focus {
+    color: variables.$color-default-white;
+    background-color: variables.$color-additional;
+  }
+
+  &:active {
+    color: variables.$color-default-white;
+    background-color: variables.$color-basic;
+  }
 }

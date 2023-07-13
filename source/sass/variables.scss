@@ -1,7 +1,7 @@
 // Colors
 $color-basic: #102654;
 $color-footer: #030A1A;
-
+$color-additional: #103AAE;
 // Default
 
 $color-default-black:               #000000;
@@ -27,8 +27,8 @@ $fz-default:                        16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
-$ff-body:                 "Roboto Condensed", "Arial", sans-serif;
-$ff-title:                    "Alumni Sans", "Arial", sans-serif;
+$ff-secondary:                 "Roboto Condensed", "Arial", sans-serif;
+$ff-primary:                    "Alumni Sans", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
