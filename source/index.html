@@ -320,7 +320,7 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <a class="footer__logo"><img></a>
+          <a class="footer__logo"><svg class="footer__icon" width="119" height="23" role="img"><use xlink:href="img/sprite.svg#supergym"></use></svg></a>
           <nav class="footer__navigation">
             <ul class="footer__navigation-list">
               <li class="footer__navigation-item">
@@ -342,51 +342,27 @@
           </nav>
           <ul class="footer__social social">
             <li class="social__item">
-              <a class="social__link" href=""></a>
-              <span class="visually-hidden">Мы в Вконтакте.</span>
+              <a class="social__link" href="">
+                <svg width="13" height="8" role="img"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href=""></a>
-              <span class="visually-hidden">Мы в Одноклассники.</span>
+              <a class="social__link" href="">
+                <svg width="10" height="17" role="img"><use xlink:href="img/sprite.svg#ok"></use></svg>
+                <span class="visually-hidden">Мы в Одноклассники.</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href=""></a>
-              <span class="visually-hidden">Мы в Reddit.</span>
+              <a class="social__link" href="">
+                <svg width="15" height="15" role="img"><use xlink:href="img/sprite.svg#reddit"></use></svg>
+                <span class="visually-hidden">Мы в Reddit.</span>
+              </a>
             </li>
           </ul>
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

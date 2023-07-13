@@ -1,0 +1,38 @@
+@use "../mixins";
+@use "../variables";
+
+.footer {
+  padding: 41px 0;
+  background-color: variables.$color-footer;
+
+  @include mixins.vp-tablet {
+    padding: 45px 0;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 50px 0;
+  }
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  width: 82px;
+  color: variables.$color-default-white;
+}
+
+.footer__navigation-list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__navigation-item a {
+  display: block;
+  color: variables.$color-default-white;
+}
