@@ -31,11 +31,18 @@
       <main class="main-container">
         <section class="hero">
           <div class="container">
-            <p class="hero__flag"></p>
-            <h1 class="hero__title">Фитнес Центр</h1>
-            <p class="hero__subtitle">Тренажёрный зал <br>Групповые занятия<br>Кардио-зона </p>
-            <a class="hero__btn btn" href="#subscription">Купить абонемент</a>
-            <img>
+            <p class="hero__description">Тренажёрный зал <br>Групповые занятия<br>Кардио-зона </p>
+            <div class="hero__content">
+              <p class="hero__flag">Омск</p>
+              <h1 class="hero__title">Фитнес центр</h1>
+              <a class="hero__btn btn" href="#subscription">Купить абонемент</a>
+            </div>
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/hero/hero_image_tablet.webp 1x, img/hero/hero_image_tablet@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 1199px)" srcset="img/hero/hero_image_tablet.jpg 1x, img/hero/hero_image_tablet@2x.jpg 2x">
+              <source srcset="img/hero/hero_image.webp, img/hero/hero_image@2x.webp 2x" type="image/webp">
+              <img class="hero__image" src="img/hero/hero_image.jpg" srcset="img/hero/hero_image@2x.jpg 2x" alt="Купи абонемент в тренажерный зал" width="500" height="556">
+            </picture>
           </div>
         </section>
         <section class="gym">

@@ -2,28 +2,36 @@
 @use "../mixins";
 
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
-
+  display: block;
+  padding: 21px;
+  font-size: 12px;
+  font-family: variables.$ff-secondary;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
   color: variables.$color-default-white;
-
-  background-color: variables.$color-neon-blue;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: 4px solid variables.$color-default-white;
+  outline-offset: -2px;
 
-  transition: opacity variables.$trans-default;
+  transition: all variables.$trans-default;
 
-  &--red {
-    background-color: variables.$color-torch-red;
+  &:hover {
+    color: variables.$color-additional;
+    background-color: variables.$color-default-white;
+  }
+
+  &:active {
+    color: variables.$color-basic;
+    background-color: variables.$color-default-white;
   }
 
   &:disabled {
     opacity: 0.5;
 
     pointer-events: none;
-  }
-
-  @include mixins.hover-focus {
-    opacity: 0.8;
   }
 }

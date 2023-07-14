@@ -20,7 +20,7 @@
   line-height: 31px;
   font-weight: 600;
   color: currentColor;
-  letter-spacing: .03em;
+  letter-spacing: variables.$letter-space;
   transition: all variables.$trans-default;
 
   &:hover {
