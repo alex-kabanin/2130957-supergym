@@ -1452,7 +1452,14 @@ button,
 }
 
 .hero__btn {
+  width: 93%;
+  margin-left: auto;
   padding: 24px;
+}
+@media (max-width: 1199px) {
+  .hero__btn {
+    width: 100%;
+  }
 }
 
 .footer {

@@ -118,5 +118,11 @@
 }
 
 .hero__btn {
+    width: 93%;
+  margin-left: auto;
   padding: 24px;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+  }
 }
