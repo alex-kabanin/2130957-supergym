@@ -47,10 +47,33 @@
         </section>
         <section class="gym">
           <div class="container">
-            <h2 class="gym__title">Тренажерный зал</h2>
-            <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
-            <p class="gym__text">Supergym — самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-            <p class="gym__text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            <div class="gym__content">
+              <h2 class="gym__title">Тренажерный зал</h2>
+              <p class="gym__subtitle">Просторный зал площадью 900 кв/м</p>
+              <p class="gym__text">Supergym — самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p class="gym__text show-desktop">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+          <picture class="gym__picture">
+            <source media="(max-width: 767px)" srcset="img/gym/gym_mobile.webp 1x, img/gym/gym_mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/gym/gym_mobile.jpg 1x, img/gym/gym_mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/gym/gym_tablet.webp 1x, img/gym/gym_tablet@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1199px)" srcset="img/gym/gym_tablet.jpg 1x, img/gym/gym_tablet@2x.jpg 2x">
+            <source srcset="img/gym/gym.webp 1x, img/gym/gym.webp 2x" type="image/webp">
+            <img class="gym__image" src="img/gym/gym.jpg" srcset="img/gym/gym@2x.jpg 2x" alt="Тренажерный зал" width="660" height="401">
+          </picture>
+            <div class="gym__video-wrapper">
+              <iframe class="gym__video" width="560" height="315" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <button id="play-button" class="gym__play-wrapper" type="button">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/gym/video_thumbnail_mobile.webp 1x, img/gym/video_thumbnail_mobile@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="img/gym/video_thumbnail_mobile.jpg 1x, img/gym/video_thumbnail_mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/gym/video_thumbnail_tablet.webp 1x, img/gym/video_thumbnail@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1199px)" srcset="img/gym/video_thumbnail_tablet.jpg 1x, img/gym/video_thumbnail@2x.jpg 2x">
+                  <source srcset="img/gym/video_thumbnail.webp 1x, img/gym/video_thumbnail@2x.webp 2x" type="image/webp">
+                  <img class="gym__button-image" src="img/gym/video_thumbnail.jpg" srcset="img/gym/video_thumbnail@2x.jpg 2x" alt="Запустите видео." width="364" height="228">
+                </picture>
+              </button>
+            </div>
           </div>
         </section>
         <section class="subscription" id="subscription">

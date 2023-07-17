@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 .wrapper {
   position: relative;
@@ -42,6 +43,12 @@
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.show-desktop {
+  @include mixins.vp-tablet {
+    display: none;
+  }
 }
 
 .scroll-lock-ios {

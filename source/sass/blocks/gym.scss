@@ -1,0 +1,168 @@
+@use "../variables";
+@use "../mixins";
+
+.gym {
+  padding: 120px 0;
+
+  @include mixins.vp-tablet {
+    padding: 100px 0;
+  }
+}
+
+.gym .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+
+  @include mixins.vp-tablet {
+    gap: 50px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 0;
+    gap: 40px;
+  }
+}
+
+.gym__content {
+  max-width: 355px;
+  margin: 13px 0 0 60px;
+
+  @include mixins.vp-tablet {
+    margin: 0 auto;
+    max-width: 504px;
+    text-align: center;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 0 15px;
+    text-align: left;
+  }
+}
+
+.gym__title {
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-family: variables.$ff-primary;
+  line-height: 57.6px;
+  font-weight: 600;
+  letter-spacing: variables.$letter-space;
+
+  @include mixins.vp-tablet {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include mixins.vp-mobile {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom:20px;
+  }
+}
+
+.gym__subtitle {
+  margin-bottom: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mixins.vp-mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.gym__video-wrapper {
+  position: relative;
+  margin: -198px auto 0;
+
+  @include mixins.vp-tablet {
+    margin: -136px auto 0;
+  }
+  @include mixins.vp-mobile {
+    margin: 0 auto;
+  }
+
+}
+
+.gym__video {
+  margin-left: 60px;
+  width: 364px;
+  height: 228px;
+
+  @include mixins.vp-tablet {
+    margin-left: 0;
+    width: 266px;
+    height: 167px;
+  }
+
+  @include mixins.vp-mobile {
+    width: 320px;
+  }
+}
+
+.gym__play-wrapper {
+  position: absolute;
+  right: 0;
+  width: 364px;
+  height: 228px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    background-image: url("../img/svg/play-button.svg");
+    background-repeat: no-repeat;
+    transition: all variables.$trans-default;
+    background-size: cover;
+  }
+
+  &:hover::after, &:focus::after {
+    background-image: url("../img/svg/play-button-hover.svg");
+  }
+
+  &:active::after {
+    background-image: url("../img/svg/play-button-active.svg");
+  }
+
+  &:disabled::after {
+    background-image: url("../img/svg/play-button-disabled.svg");
+  }
+
+  @include mixins.vp-tablet {
+    width: 266px;
+    height: 167px;
+
+    &::after {
+      top: calc(50% - 36.5px);
+      left: calc(50% - 36.5px);
+      width: 73px;
+      height: 73px;
+    }
+  }
+
+  @include mixins.vp-mobile {
+    width: 320px;
+  }
+}
+
+.gym__picture {
+
+}
+
+.gym__button-image {
+  @include mixins.vp-mobile {
+    width: 100%;
+    height: 167px;
+  }
+}

@@ -1,14 +1,14 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import {iosVhFix} from './utils/ios-vh-fix.js';
+import {initModals} from './modules/modals/init-modals.js';
+import {Form} from './modules/form-validate/form.js';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
+
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules
