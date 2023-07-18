@@ -47,4 +47,23 @@ const onControlTabClick = (evt) => {
 
 tabsControl.addEventListener('click', onControlTabClick);
 
+function smoothScrollToAnchor(anchorId) {
+  const anchor = document.querySelector(anchorId);
+
+  if (anchor) {
+    window.scrollTo({
+      top: anchor.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+}
+
+const anchorLink = document.querySelector('.hero__btn');
+
+anchorLink.addEventListener('click', (event) => {
+  event.preventDefault();
+  const targetId = anchorLink.getAttribute('href');
+  smoothScrollToAnchor(targetId);
+});
+
 export {tabsContentItems, tabsContentBtns};
