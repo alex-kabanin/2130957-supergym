@@ -7,6 +7,10 @@
   @include mixins.vp-tablet {
     padding: 100px 0;
   }
+
+  @include mixins.vp-mobile {
+    padding: 70px 0;
+  }
 }
 
 .gym .container {
@@ -80,6 +84,7 @@
   margin: -198px auto 0;
 
   @include mixins.vp-tablet {
+    height: 167px;
     margin: -136px auto 0;
   }
   @include mixins.vp-mobile {
@@ -133,6 +138,10 @@
 
   &:active::after {
     background-image: url("../img/svg/play-button-active.svg");
+  }
+
+  &:disabled {
+    cursor: auto;
   }
 
   &:disabled::after {

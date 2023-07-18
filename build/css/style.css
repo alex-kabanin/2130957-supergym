@@ -1640,6 +1640,11 @@ button,
     padding: 100px 0;
   }
 }
+@media (max-width: 767px) {
+  .gym {
+    padding: 70px 0;
+  }
+}
 
 .gym .container {
   display: -webkit-box;
@@ -1724,6 +1729,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gym__video-wrapper {
+    height: 167px;
     margin: -136px auto 0;
   }
 }
@@ -1779,6 +1785,9 @@ button,
 }
 .gym__play-wrapper:active::after {
   background-image: url("../img/svg/play-button-active.svg");
+}
+.gym__play-wrapper:disabled {
+  cursor: auto;
 }
 .gym__play-wrapper:disabled::after {
   background-image: url("../img/svg/play-button-disabled.svg");
