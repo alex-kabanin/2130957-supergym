@@ -1,0 +1,54 @@
+@use "../variables";
+@use "../mixins";
+
+.tabs-control {
+  margin: 0 auto 39px;
+  padding: 0;
+  display: flex;
+  width: max-content;
+  gap: 46px;
+  border-bottom: 2px solid rgb(120, 120, 120, 0.2);
+  list-style: none;
+}
+
+.tabs-control__button {
+  position: relative;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.5;
+  background-color: transparent;
+  transition: all variables.$trans-default;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: all variables.$trans-default;
+  }
+
+  &:hover, &:focus, &:active {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:hover::after, &:focus::after, &:active::after {
+    background-color: #D10A42;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+
+  &--active::after {
+    background-color: #D10A42;
+  }
+}
+

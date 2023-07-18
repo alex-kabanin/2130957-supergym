@@ -1,0 +1,25 @@
+@use "../variables";
+@use "../mixins";
+
+.subscription {
+  padding: 120px 0;
+  background-color: variables.$color-additional-background;
+  text-align: center;
+}
+
+.tabs-content__list {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.subscription__title {
+  font-size: 54px;
+  font-family: variables.$ff-primary;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: variables.$letter-space;
+  margin-bottom: 25px;
+}

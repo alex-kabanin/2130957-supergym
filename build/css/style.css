@@ -607,6 +607,13 @@ button,
   opacity: 0.5;
   pointer-events: none;
 }
+.btn--dark {
+  color: #102654;
+  outline: 2px solid #102654;
+}
+.btn--dark:hover, .btn--dark:focus {
+  background-image: linear-gradient(97.05deg, #ED0233 17 0%, #003EB7 100%);
+}
 
 .modal {
   position: fixed;
@@ -1815,6 +1822,104 @@ button,
     width: 100%;
     height: 167px;
   }
+}
+
+.subscription {
+  padding: 120px 0;
+  background-color: #F8F9FC;
+  text-align: center;
+}
+
+.tabs-content__list {
+  display: none;
+}
+.tabs-content__list--active {
+  display: block;
+}
+
+.subscription__title {
+  font-size: 54px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin-bottom: 25px;
+}
+
+.tabs-control {
+  margin: 0 auto 39px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 46px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  list-style: none;
+}
+
+.tabs-control__button {
+  position: relative;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.5;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tabs-control__button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tabs-control__button:hover, .tabs-control__button:focus, .tabs-control__button:active {
+  outline: none;
+  opacity: 1;
+}
+.tabs-control__button:hover::after, .tabs-control__button:focus::after, .tabs-control__button:active::after {
+  background-color: #D10A42;
+}
+.tabs-control__button--active {
+  opacity: 1;
+}
+.tabs-control__button--active::after {
+  background-color: #D10A42;
+}
+
+.tabs-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-content__list {
+  margin: 0;
+  padding: 0;
+  display: none;
+  gap: 40px;
+  list-style: none;
+}
+.tabs-content__list--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs-content__item {
+  padding: 68px 78px;
+  background-color: #ffffff;
 }
 
 /* @mixin hover-focus {

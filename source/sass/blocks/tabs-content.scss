@@ -1,0 +1,25 @@
+@use "../variables";
+@use "../mixins";
+
+.tabs-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-content__list {
+  margin: 0;
+  padding: 0;
+  display: none;
+  gap: 40px;
+  list-style: none;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.tabs-content__item {
+  padding: 68px 78px;
+  background-color: variables.$color-default-white;
+}
