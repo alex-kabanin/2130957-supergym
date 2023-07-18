@@ -38,8 +38,10 @@
     color: variables.$color-basic;
     outline: 2px solid variables.$color-basic;
 
-    &:hover, &:focus {
-      background-image: linear-gradient(97.05deg,#ED0233 17 0%,#003EB7 100%);
+    &:hover, &:focus, &-hovered {
+      color: variables.$color-default-white;
+      background-image: linear-gradient(97.05deg,#ED0233 0%, #003EB7 100%);
+      outline: 2px solid transparent;
     }
   }
 }

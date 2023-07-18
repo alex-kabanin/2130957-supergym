@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix.js';
 import {initModals} from './modules/modals/init-modals.js';
 import {Form} from './modules/form-validate/form.js';
 import './modules/video/video.js';
+import './modules/tabs/tabs.js'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

@@ -5,7 +5,18 @@
   padding: 120px 0;
   background-color: variables.$color-additional-background;
   text-align: center;
+
+
+  @include mixins.vp-tablet {
+    padding: 100px 0;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 70px 0;
+  }
 }
+
+
 
 .tabs-content__list {
   display: none;
@@ -22,4 +33,14 @@
   line-height: 65px;
   letter-spacing: variables.$letter-space;
   margin-bottom: 25px;
+
+  @include mixins.vp-tablet {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include mixins.vp-mobile {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
