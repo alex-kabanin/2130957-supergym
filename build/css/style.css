@@ -3182,6 +3182,51 @@ button,
   margin-bottom: 48px;
 }
 
+.staff__button-next, .staff__button-prev {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 36px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.staff__button-next::after, .staff__button-prev::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 23px;
+  height: 23px;
+  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+}
+
+.staff__button-next {
+  right: 0;
+}
+.staff__button-next::after {
+  right: 8px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.staff__button-prev {
+  left: 0;
+}
+.staff__button-prev::after {
+  left: 8px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {

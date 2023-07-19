@@ -17,3 +17,45 @@
   letter-spacing: variables.$letter-space;
   margin-bottom: 48px;
 }
+
+.staff__button-next, .staff__button-prev {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 36px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: opacity .3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    width: 23px;
+    height: 23px;
+    border-bottom: 1px solid #afafaf;
+    border-left: 1px solid #afafaf;
+  }
+}
+
+.staff__button-next {
+  right: 0;
+
+  &::after {
+    right: 8px;
+    transform: rotate(-135deg);
+  }
+}
+
+.staff__button-prev {
+  left: 0;
+
+  &::after {
+    left: 8px;
+    transform: rotate(45deg);
+  }
+}
+

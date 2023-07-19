@@ -9,8 +9,8 @@ new Swiper('.staff__swiper', {
   slidesPerView: 1,
   spaceBetween: 40,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.staff__button-next',
+    prevEl: '.staff__button-prev',
   },
   breakpoints: {
     320: {
