@@ -1,0 +1,168 @@
+@use "../variables";
+@use "../mixins";
+
+.event {
+  padding: 120px 0 106px 0;
+
+  @include mixins.vp-tablet {
+    padding: 100px 0;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 70px 0;
+  }
+}
+
+.event__wrapper {
+  display: grid;
+  grid-template-columns: 500px 660px;
+
+  @include mixins.vp-tablet {
+    grid-template-columns: 292px 386px;
+  }
+
+  @include mixins.vp-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.event__left-side {
+  display: grid;
+  grid-template-columns: 201px 92px;
+  gap: 25px 50px;
+  padding: 80px 78px;
+  color: variables.$color-default-white;
+  background-color: variables.$color-banner;
+
+  @include mixins.vp-tablet {
+    grid-template-columns: 117px 56px;
+    padding: 43px 45px;
+    gap: 10px 29px;
+  }
+
+  @include mixins.vp-mobile {
+    justify-content: center;
+  }
+}
+
+.event__right-side {
+  background-color: variables.$color-basic;
+
+  @include mixins.vp-mobile {
+    height: 292px;
+  }
+}
+
+.event__image {
+  display: block;
+  width: 660px;
+  height: 100%;
+  object-fit: cover;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+  }
+}
+
+.event__title {
+  font-size: 82px;
+  font-family: variables.$ff-primary;
+  font-weight: 600;
+  line-height: 78px;
+  text-transform: uppercase;
+  letter-spacing: variables.$letter-space;
+
+  @include mixins.vp-tablet {
+    font-size: 48px;
+    line-height: 50px;
+  }
+}
+
+.event__description {
+  grid-column: 1/3;
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 20px;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.event__btn {
+  grid-column: 1/3;
+  padding: 29px;
+
+  @include mixins.vp-tablet {
+    padding: 16px;
+  }
+}
+
+.event__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include mixins.vp-tablet {
+    gap: 10px;
+  }
+}
+
+.event__item-title{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 18px;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.event__item-caption {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  width: max-content;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: variables.$color-default-white;
+  }
+
+  @include mixins.vp-tablet {
+    align-items: center;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      top: -5px
+    }
+  }
+}
+
+.event__item-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @include mixins.vp-tablet {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}

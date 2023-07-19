@@ -20,6 +20,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     transform: rotate(150deg);
+
+    @include mixins.retina {
+      background-image: url("../img/subscription/background@2x.png");
+    }
+
+    @supports (background-image: url("../img/subscription/background.webp")) {
+      background-image: url("../img/subscription/background.webp");
+    }
+
+    @supports (background-image: url("../img/subscription/background@2x.webp")) {
+      @include mixins.retina {
+        background-image: url("../img/subscription/background@2x.webp");
+      }
+    }
   }
 
   @include mixins.vp-tablet {

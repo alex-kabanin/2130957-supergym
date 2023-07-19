@@ -6,6 +6,13 @@
   }
 }
 
+@mixin supports-webp($image-path) {
+  @supports (background-image: url("#{$image-path}.webp")) {
+    background-image: url("#{$image-path}.webp");
+  }
+}
+
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
