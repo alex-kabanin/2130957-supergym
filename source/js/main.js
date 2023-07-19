@@ -2,7 +2,32 @@ import {iosVhFix} from './utils/ios-vh-fix.js';
 import {initModals} from './modules/modals/init-modals.js';
 import {Form} from './modules/form-validate/form.js';
 import './modules/video/video.js';
-import './modules/tabs/tabs.js'
+import './modules/tabs/tabs.js';
+
+new Swiper('.staff__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

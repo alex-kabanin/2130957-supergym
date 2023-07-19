@@ -1,0 +1,19 @@
+@use "../variables";
+@use "../mixins";
+
+.staff {
+  padding-bottom: 105px;
+}
+
+.staff .container {
+  position: relative;
+}
+
+.staff__title {
+  font-size: 54px;
+  font-family: variables.$ff-primary;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: variables.$letter-space;
+  margin-bottom: 48px;
+}

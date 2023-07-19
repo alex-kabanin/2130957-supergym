@@ -3,7 +3,7 @@
 
 @use "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@use "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -34,6 +34,7 @@
 @use "blocks/tabs-control";
 @use "blocks/tabs-content";
 @use "blocks/event";
+@use "blocks/staff";
 
 // ---------------------------------
 
