@@ -21,18 +21,12 @@
     background-repeat: no-repeat;
     transform: rotate(150deg);
 
+    @include mixins.supports-webp("../img/subscription/background");
+
     @include mixins.retina {
       background-image: url("../img/subscription/background@2x.png");
-    }
 
-    @supports (background-image: url("../img/subscription/background.webp")) {
-      background-image: url("../img/subscription/background.webp");
-    }
-
-    @supports (background-image: url("../img/subscription/background@2x.webp")) {
-      @include mixins.retina {
-        background-image: url("../img/subscription/background@2x.webp");
-      }
+      @include mixins.supports-webp("../img/subscription/background@2x");
     }
   }
 
