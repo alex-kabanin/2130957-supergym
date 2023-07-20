@@ -14,12 +14,14 @@ new Swiper('.staff__swiper', {
   },
   breakpoints: {
     320: {
+      width: 226,
       slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
+      width: 566,
       slidesPerView: 2,
-      spaceBetween: 0,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 4,

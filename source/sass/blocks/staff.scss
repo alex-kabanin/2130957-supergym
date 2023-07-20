@@ -3,10 +3,21 @@
 
 .staff {
   padding-bottom: 105px;
+
+  @include mixins.vp-tablet {
+    padding-bottom: 100px;
+  }
 }
 
 .staff .container {
-  position: relative;
+
+  @include mixins.vp-tablet {
+    padding: 0 101px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 0 47px;
+  }
 }
 
 .staff__title {
@@ -16,46 +27,124 @@
   line-height: 65px;
   letter-spacing: variables.$letter-space;
   margin-bottom: 48px;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 31px;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  @include mixins.vp-mobile {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .staff__button-next, .staff__button-prev {
   position: absolute;
-  top: 50%;
-  width: 24px;
-  height: 36px;
+  top: calc(50% - 16px);
+  width: 56px;
+  height: 56px;
   padding: 0;
   background-color: transparent;
-  border: 0;
-  transform: translateY(-50%);
+  border: 1px solid transparent;
   cursor: pointer;
-  transition: opacity .3s ease;
+  border-radius: 50%;
+  transition: all variables.$trans-default;
 
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    width: 23px;
-    height: 23px;
-    border-bottom: 1px solid #afafaf;
-    border-left: 1px solid #afafaf;
+    top: 16px;
+    width: 22.64px;
+    height: 22.64px;
+    border-bottom: 1px solid variables.$color-basic;
+    border-left: 1px solid variables.$color-basic;
+  }
+
+  &:hover, &:focus {
+    border: 1px solid variables.$color-basic;
+  }
+
+  &:active {
+    background-color: variables.$color-basic;
+
+    &:after {
+      border-left: 1px solid variables.$color-default-white;
+      border-bottom: 1px solid variables.$color-default-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  @include mixins.vp-mobile {
+    width: 40px;
+    height: 40px;
+
+    &:after {
+      top: 7px;
+    }
   }
 }
 
 .staff__button-next {
-  right: 0;
+  right: -75px;
 
   &::after {
-    right: 8px;
+    left: 8px;
     transform: rotate(-135deg);
+  }
+
+  @include mixins.vp-mobile {
+    right: -42px;
+
+    &::after {
+      left: 1px;
+    }
   }
 }
 
 .staff__button-prev {
-  left: 0;
+  left: -75px;
 
   &::after {
-    left: 8px;
+    right: 8px;
     transform: rotate(45deg);
+  }
+
+  @include mixins.vp-mobile {
+    left: -42px;
+
+    &::after {
+      right: 1px;
+    }
   }
 }
 
+.staff__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.staff__swiper {
+  width: 1160px;
+
+  @include mixins.vp-tablet {
+    width: 566px;
+  }
+
+  @include mixins.vp-mobile {
+    width: 226px;
+  }
+}
+
+.staff__button-container {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+}
