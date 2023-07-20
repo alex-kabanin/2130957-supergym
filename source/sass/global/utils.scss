@@ -52,6 +52,20 @@
   }
 }
 
+.show-mobile {
+  display: none;
+
+  @include mixins.vp-mobile {
+    display: block;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: variables.$vp-tablet) {
+    display: none;
+  }
+}
+
 .scroll-lock-ios {
   position: fixed;
 

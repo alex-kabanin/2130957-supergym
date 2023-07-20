@@ -2,6 +2,6 @@
   display: none;
 }
 
-.answers__item:open .answers__reply {
+.answers__item[open] .answers__reply {
   display: block;
 }
