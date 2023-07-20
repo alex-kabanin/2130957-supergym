@@ -3557,10 +3557,19 @@ button,
 
 .advantages__item--third .advantages__head {
   margin-bottom: 35px;
+  font-size: 26px;
 }
 
 .advantages__item--third .advantages__description {
   font-weight: 400;
+}
+
+.answers__reply {
+  display: none;
+}
+
+.answers__item:open .answers__reply {
+  display: block;
 }
 
 /* @mixin hover-focus {

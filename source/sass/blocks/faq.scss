@@ -1,0 +1,7 @@
+.answers__reply {
+  display: none;
+}
+
+.answers__item:open .answers__reply {
+  display: block;
+}
