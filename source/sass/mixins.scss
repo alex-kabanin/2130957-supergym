@@ -60,6 +60,18 @@
   }
 }
 
+@mixin line-advantages {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -65px;
+    height: 2px;
+    background-color: rgba(209, 10, 66, 0.2);
+  }
+}
+
 
 // Mobile first
 
