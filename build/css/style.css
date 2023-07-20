@@ -3534,7 +3534,6 @@ button,
 
 .advantages__item--second {
   position: relative;
-  padding-left: 19px;
 }
 .advantages__item--second::after {
   content: "";
@@ -3546,11 +3545,17 @@ button,
   background-color: rgba(209, 10, 66, 0.2);
 }
 @media (max-width: 1199px) {
-  .advantages__item--second {
-    padding-left: 0;
-  }
   .advantages__item--second::after {
     height: 0;
+  }
+}
+
+.advantages__item--fourth {
+  padding-left: 19px;
+}
+@media (max-width: 1199px) {
+  .advantages__item--fourth {
+    padding-left: 0;
   }
 }
 

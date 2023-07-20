@@ -82,16 +82,22 @@
 
 .advantages__item--second {
   position: relative;
-  padding-left: 19px;
 
   @include mixins.line-advantages;
 
   @include mixins.vp-tablet {
-    padding-left: 0;
 
     &::after {
       height: 0;
     }
+  }
+}
+
+.advantages__item--fourth {
+  padding-left: 19px;
+
+  @include mixins.vp-tablet {
+    padding-left: 0;
   }
 }
 
