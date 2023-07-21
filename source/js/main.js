@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals.js';
 import {Form} from './modules/form-validate/form.js';
 import './modules/video/video.js';
 import './modules/tabs/tabs.js';
+import './modules/faq/faq.js';
 
 new Swiper('.staff__swiper', {
   loop: true,

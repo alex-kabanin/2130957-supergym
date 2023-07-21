@@ -1,7 +1,28 @@
-.answers__reply {
-  display: none;
+@use "../variables";
+@use "../mixins";
+
+.faq {
+  padding: 120px 0 121px;
+  background-color: variables.$color-additional-background;
 }
 
-.answers__item[open] .answers__reply {
-  display: block;
+.faq__wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+.faq__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq__title {
+  margin-bottom: 39px;
+  font-size: 54px;
+  font-family: variables.$ff-primary;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: variables.$letter-space;
 }

@@ -1,0 +1,96 @@
+@use "../variables";
+@use "../mixins";
+
+.answers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.answers__wrapper {
+  position: relative;
+}
+
+.answers__reply {
+  display: none;
+  margin-top: 15px;
+  padding-right: 200px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.answers__item {
+  margin-bottom: -1px;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+}
+
+.answers__item[open] .answers__reply {
+  display: block;
+}
+
+.answers__summary {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 42px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.answers__sign {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid variables.$color-basic;
+  border-radius: 50%;
+  transition: variables.$trans-default;
+  pointer-events: none;
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 9px);
+    height: 1px;
+    width: 18px;
+    background-color: variables.$color-basic;
+    transition: all .4s ease-in-out;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    background-color: variables.$color-basic;
+  }
+
+  &:hover::after, &:hover::before {
+    background-color: variables.$color-default-white;
+  }
+}
+
+.answers__wrapper--open .answers__sign {
+  background-color: variables.$color-basic;
+
+  &::after {
+    background-color: variables.$color-default-white;
+  }
+
+  &::before {
+    background-color: variables.$color-default-white;
+    transform: rotate(360deg);
+  }
+}
+
+.answers__wrapper:hover .answers__sign {
+  background-color: variables.$color-basic;
+
+  &::after, &::before {
+    background-color: variables.$color-default-white;
+  }
+}
+
