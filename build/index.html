@@ -319,9 +319,19 @@
             <h2 class="offers__title">Акции</h2>
             <ul class="offers__list">
               <li class="offers__item offers__item--large">
-                <h3 class="offer__list-title">Год 4999</h3>
-                <p class="offer__list-caption">Безлимитный абонемент в тренажерный зал</p>
-                <a class="offer__list-link" href="#">Подробнее</a>
+                <div class="offers__list-content">
+                  <h3 class="offer__list-title">Год <span class="offer__list-price">4999</span></h3>
+                  <p class="offer__list-caption">Безлимитный абонемент в тренажерный зал</p>
+                  <a class="offer__list-link offer__list-link--white" href="#">Подробнее</a>
+                </div>
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/offers/banner_mobile.webp 1x, img/offers/banner_mobile@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 767px)" srcset="img/offers/banner_mobile.jpg 1x, img/offers/banner_mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/offers/banner_tablet.webp 1x, img/offers/banner_tablet@2x.webp 2x" type="image/webp">
+                  <source media="(max-width: 1199px)" srcset="img/offers/banner_tablet.jpg 1x, img/offers/banner_tablet@2x.jpg 2x">
+                  <source srcset="img/offers/banner.webp 1x, img/offers/banner@2x.webp 2x" type="image/webp">
+                  <img class="offer__list-image" src="img/offers/banner.jpg" srcset="img/offers/banner@2x.jpg 2x" alt="Безлимитный абонемент в тренажерный зал." width="280" height="462">
+                </picture>
               </li>
               <li class="offers__item">
                 <h3 class="offer__list-title">Месяц бесплатно</h3>
