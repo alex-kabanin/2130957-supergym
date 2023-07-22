@@ -12,20 +12,27 @@
 }
 
 .answers__reply {
-  display: block;
   margin-top: 15px;
   padding-right: 200px;
   font-size: 18px;
   line-height: 23px;
+  transition: all variables.$tf-default;
+  overflow: hidden;
 }
 
 .answers__item {
+  max-height: 500px;
   margin-bottom: -1px;
   padding: 25px 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   border-top: 1px solid rgba(28, 51, 116, 0.2);
-}
 
+  &:not(.js-details)[open],
+  &.is-open {
+    --border-color: #666;
+    position: relative;
+  }
+}
 
 .answers__summary {
   position: relative;
@@ -76,6 +83,7 @@
 
   &::after {
     background-color: variables.$color-default-white;
+    transform: rotate(180deg);
   }
 
   &::before {
@@ -92,3 +100,14 @@
   }
 }
 
+.answers__item summary ~ .animated {
+  overflow: hidden;
+}
+.answers__item[open] summary ~ .animated {
+  animation: sweep 1s ease;
+}
+
+@keyframes sweep {
+  0%    {max-height:0;}
+  100%  {max-height:2000px;}
+}
