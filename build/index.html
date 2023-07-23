@@ -320,9 +320,9 @@
             <ul class="offers__list">
               <li class="offers__item offers__item--large">
                 <div class="offers__list-content">
-                  <h3 class="offer__list-title">Год <span class="offer__list-price">4999</span></h3>
-                  <p class="offer__list-caption">Безлимитный абонемент в тренажерный зал</p>
-                  <a class="offer__list-link offer__list-link--white" href="#">Подробнее</a>
+                  <h3 class="offers__list-title">Год <span class="offers__list-price">4999</span></h3>
+                  <p class="offers__list-caption">Безлимитный абонемент в тренажерный зал</p>
+                  <a class="offers__list-link offers__list-link--white" href="#">Подробнее</a>
                 </div>
                 <picture>
                   <source media="(max-width: 767px)" srcset="img/offers/banner_mobile.webp 1x, img/offers/banner_mobile@2x.webp 2x" type="image/webp">
@@ -330,18 +330,18 @@
                   <source media="(max-width: 1199px)" srcset="img/offers/banner_tablet.webp 1x, img/offers/banner_tablet@2x.webp 2x" type="image/webp">
                   <source media="(max-width: 1199px)" srcset="img/offers/banner_tablet.jpg 1x, img/offers/banner_tablet@2x.jpg 2x">
                   <source srcset="img/offers/banner.webp 1x, img/offers/banner@2x.webp 2x" type="image/webp">
-                  <img class="offer__list-image" src="img/offers/banner.jpg" srcset="img/offers/banner@2x.jpg 2x" alt="Безлимитный абонемент в тренажерный зал." width="280" height="462">
+                  <img class="offers__list-image" src="img/offers/banner.jpg" srcset="img/offers/banner@2x.jpg 2x" alt="Безлимитный абонемент в тренажерный зал." width="280" height="462">
                 </picture>
               </li>
               <li class="offers__item">
-                <h3 class="offer__list-title">Месяц бесплатно</h3>
-                <p class="offer__list-caption">Приведи друга, получи абонемент в подарок</p>
-                <a class="offer__list-link" href="#">Подробнее</a>
+                <h3 class="offers__list-title">Месяц бесплатно</h3>
+                <p class="offers__list-caption">Приведи друга, получи абонемент в подарок</p>
+                <a class="offers__list-link" href="#">Подробнее</a>
               </li>
               <li class="offers__item">
-                <h3 class="offer__list-title">Скидка 20%</h3>
-                <p class="offer__list-caption">Корпоративный фитнес с командой</p>
-                <a class="offer__list-link" href="#">Подробнее</a>
+                <h3 class="offers__list-title">Скидка 20%</h3>
+                <p class="offers__list-caption">Корпоративный фитнес с командой</p>
+                <a class="offers__list-link" href="#">Подробнее</a>
               </li>
             </ul>
           </div>
@@ -527,19 +527,19 @@
         <section class="contacts">
           <h2 class="visually-hidden">Бесплатное занятие и Контакты</h2>
           <div class="container">
-            <form class="contact__form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <form id="form" class="contacts__form" action="https://echo.htmlacademy.ru/courses" method="post">
               <h3 class="contacts__title">Бесплатное занятие</h3>
               <fieldset class="contacts__fields">
                 <label class="contacts__label">
-                  <input class="contact__input" id="first-name" type="text" name="first-name" placeholder="Имя">
+                  <input class="contacts__input" id="first-name" type="text" name="first-name" placeholder="Имя">
                 </label>
                 <label class="contacts__label">
-                  <input class="contact__input" id="phone" type="tel" name="last-name" placeholder="Телефон" oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
+                  <input class="contacts__input" id="phone" type="tel" name="last-name" placeholder="Телефон" oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
                 </label>
               </fieldset>
               <button id="contacts-submit" class="contacts__btn btn" type="submit">Отправить</button>
             </form>
-            <div class="contact__us">
+            <div class="contacts__us">
               <h3 class="contacts__title">Контакты</h3>
               <div class="contacts__wrapper">
                 <div class="contacts__content">

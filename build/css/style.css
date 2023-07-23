@@ -3991,17 +3991,17 @@ button,
   }
 }
 
-.offer__list-title {
+.offers__list-title {
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
 }
 
-.offer__list-caption {
+.offers__list-caption {
   font-weight: 400;
 }
 
-.offer__list-link {
+.offers__list-link {
   position: relative;
   display: block;
   width: -webkit-min-content;
@@ -4017,7 +4017,7 @@ button,
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.offer__list-link::after {
+.offers__list-link::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -4025,20 +4025,20 @@ button,
   bottom: 5px;
   border-bottom: 1px solid currentColor;
 }
-.offer__list-link:hover {
+.offers__list-link:hover {
   opacity: 0.5;
 }
-.offer__list-link:focus::after {
+.offers__list-link:focus::after {
   left: 0;
   right: 0;
   bottom: 0;
   height: 100%;
   border: 1px solid currentColor;
 }
-.offer__list-link:focus-visible {
+.offers__list-link:focus-visible {
   outline: none;
 }
-.offer__list-link:active::after {
+.offers__list-link:active::after {
   left: 10px;
   right: 10px;
   bottom: 5px;
@@ -4047,11 +4047,11 @@ button,
   border-right: none;
   border-top: none;
 }
-.offer__list-link--white {
+.offers__list-link--white {
   color: #ffffff;
 }
 @media (max-width: 767px) {
-  .offer__list-link {
+  .offers__list-link {
     margin-left: auto;
     margin-right: auto;
   }
@@ -4068,38 +4068,38 @@ button,
   padding: 35px 45px 44px;
 }
 
-.offers__item--large .offer__list-title {
+.offers__item--large .offers__list-title {
   font-size: 28px;
 }
 
-.offer__list-price {
+.offers__list-price {
   display: block;
   margin-bottom: 35px;
   font-size: 70px;
   line-height: 70px;
 }
 @media (max-width: 767px) {
-  .offer__list-price {
+  .offers__list-price {
     margin-bottom: 7px;
   }
 }
 
-.offers__item--large .offer__list-caption {
+.offers__item--large .offers__list-caption {
   font-size: 18px;
   line-height: 19px;
 }
 @media (max-width: 767px) {
-  .offers__item--large .offer__list-caption {
+  .offers__item--large .offers__list-caption {
     margin-bottom: 30px;
   }
 }
 
-.offers__item--large .offer__list-link {
+.offers__item--large .offers__list-link {
   font-size: 14px;
   line-height: 16px;
 }
 
-.offer__list-image {
+.offers__list-image {
   width: 280px;
   height: 462px;
   -o-object-fit: cover;
@@ -4108,13 +4108,13 @@ button,
      object-position: top;
 }
 @media (max-width: 1199px) {
-  .offer__list-image {
+  .offers__list-image {
     width: 399px;
     height: 462px;
   }
 }
 @media (max-width: 767px) {
-  .offer__list-image {
+  .offers__list-image {
     width: 100%;
     height: 299px;
   }
@@ -4460,36 +4460,36 @@ button,
   }
 }
 
-.contact__form {
+.contacts__form {
   width: 50%;
   padding: 57px 170px 70px 103px;
   color: #ffffff;
   background-color: #102654;
 }
 @media (max-width: 1199px) {
-  .contact__form {
+  .contacts__form {
     width: 100%;
     padding: 70px 163px 70px 133px;
   }
 }
 @media (max-width: 767px) {
-  .contact__form {
+  .contacts__form {
     padding: 70px 15px;
   }
 }
 
-.contact__us {
+.contacts__us {
   width: 50%;
   padding: 57px 103px 70px 120px;
 }
 @media (max-width: 1199px) {
-  .contact__us {
+  .contacts__us {
     width: 100%;
     padding: 70px 133px 70px 133px;
   }
 }
 @media (max-width: 767px) {
-  .contact__us {
+  .contacts__us {
     padding: 70px 15px;
   }
 }
@@ -4535,7 +4535,7 @@ button,
   }
 }
 
-.contact__input {
+.contacts__input {
   width: 100%;
   padding: 7px 0;
   font-size: 14px;
@@ -4549,23 +4549,23 @@ button,
   border-bottom: 1px solid #74819C;
 }
 
-.contact__input::-webkit-input-placeholder {
+.contacts__input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.contact__input::-moz-placeholder {
+.contacts__input::-moz-placeholder {
   color: #ffffff;
 }
 
-.contact__input:-ms-input-placeholder {
+.contacts__input:-ms-input-placeholder {
   color: #ffffff;
 }
 
-.contact__input::-ms-input-placeholder {
+.contacts__input::-ms-input-placeholder {
   color: #ffffff;
 }
 
-.contact__input::placeholder {
+.contacts__input::placeholder {
   color: #ffffff;
 }
 

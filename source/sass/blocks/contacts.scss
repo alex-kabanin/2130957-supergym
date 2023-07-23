@@ -18,7 +18,7 @@
   }
 }
 
-.contact__form {
+.contacts__form {
   width: 50%;
   padding: 57px 170px 70px 103px;
   color: variables.$color-default-white;
@@ -34,7 +34,7 @@
   }
 }
 
-.contact__us {
+.contacts__us {
   width: 50%;
   padding: 57px 103px 70px 120px;
 
@@ -83,7 +83,7 @@
   }
 }
 
-.contact__input {
+.contacts__input {
   width: 100%;
   padding: 7px 0;
   font-size: 14px;
@@ -97,7 +97,7 @@
   border-bottom: 1px solid #74819C;
 }
 
-.contact__input::placeholder {
+.contacts__input::placeholder {
   color: variables.$color-default-white;
 }
 
