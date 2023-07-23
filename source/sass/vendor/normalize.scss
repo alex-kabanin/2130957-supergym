@@ -57,6 +57,7 @@ hr {
   overflow: visible; /* 2 */
 }
 
+
 /**
 * 1. Correct the inheritance and scaling of font size in all browsers.
 * 2. Correct the odd `em` font sizing in all browsers.
@@ -76,6 +77,19 @@ pre {
 
 a {
   background-color: transparent;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 /**

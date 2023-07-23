@@ -7,6 +7,10 @@
   @include mixins.vp-tablet {
     padding: 100px 0;
   }
+
+  @include mixins.vp-mobile {
+    padding: 70px 0;
+  }
 }
 
 .reviews__button-container {
@@ -52,7 +56,12 @@
   @include mixins.vp-tablet {
     margin-bottom: 50px;
     font-size: 42px;
-    line-height: 50px;
+    line-height: 42px;
+  }
+
+  @include mixins.vp-mobile {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -75,6 +84,7 @@
   }
 
   @include mixins.vp-mobile {
+    gap: 20px 15px;
     padding: 40px 25px;
   }
 }
@@ -84,6 +94,11 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
+
+  @include mixins.vp-mobile {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .reviews__author {
@@ -91,12 +106,26 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
+
+  @include mixins.vp-mobile {
+    margin-bottom: 0;
+    align-self: center;
+  }
 }
 
 .reviews__quote {
   font-weight: 400;
+
+  @include mixins.vp-mobile {
+    grid-column: 1/3;
+    text-align: center;
+  }
 }
 
 .reviews__picture {
   grid-row: 1/3;
+
+  @include mixins.vp-mobile {
+    grid-row: 1/2;
+  }
 }

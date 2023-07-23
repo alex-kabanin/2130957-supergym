@@ -1,0 +1,173 @@
+@use "../variables";
+@use "../mixins";
+
+.contacts {
+  background-image: linear-gradient(90deg, variables.$color-basic 50%, variables.$color-default-white 50%);
+
+  @include mixins.vp-tablet {
+    background-image: none;
+  }
+}
+
+.contacts .container {
+  display: flex;
+  padding: 0;
+
+  @include mixins.vp-tablet {
+    display: block;
+  }
+}
+
+.contact__form {
+  width: 50%;
+  padding: 57px 170px 70px 103px;
+  color: variables.$color-default-white;
+  background-color: variables.$color-basic;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+    padding: 70px 163px 70px 133px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 70px 15px;
+  }
+}
+
+.contact__us {
+  width: 50%;
+  padding: 57px 103px 70px 120px;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+    padding: 70px 133px 70px 133px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 70px 15px;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 34px;
+  font-size: 54px;
+  font-family: variables.$ff-primary;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: variables.$letter-space;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 23px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include mixins.vp-mobile {
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.contacts__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 30px;
+  margin: 0 0 30px;
+  padding: 0;
+  border: none;
+
+  @include mixins.vp-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact__input {
+  width: 100%;
+  padding: 7px 0;
+  font-size: 14px;
+  font-family: variables.$ff-secondary;
+  font-weight: 400;
+  line-height: 18px;
+  border: none;
+  outline: none;
+  color: variables.$color-default-white;
+  background-color: variables.$color-basic;
+  border-bottom: 1px solid #74819C;
+}
+
+.contact__input::placeholder {
+  color: variables.$color-default-white;
+}
+
+.contacts__btn {
+  width: 100%;
+  padding: 21px;
+  outline: 3px solid variables.$color-default-white;
+  outline-offset: -3px;
+}
+
+.contacts__header {
+  margin-bottom: 4px;
+  font-weight: 700;
+
+  @include mixins.vp-tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 121px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 50%;
+    width: 1px;
+    background-color: #74819C;
+    transform: translateX(-50%);
+  }
+
+  @include mixins.vp-tablet {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 77px;
+
+    &::before {
+      left: calc(50% - 10px);
+    }
+  }
+
+  @include mixins.vp-mobile {
+    grid-template-columns: 1fr;
+    gap: 19px;
+    margin-top: 8px;
+
+    &::before {
+      width: 0;
+    }
+  }
+}
+
+.contacts__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+  @include mixins.vp-tablet {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__content {
+  &--schedule {
+    grid-row: 2/3;
+  }
+}
