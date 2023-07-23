@@ -23,6 +23,14 @@
   line-height: 23px;
   transition: all variables.$tf-default;
   overflow: hidden;
+
+  @include mixins.vp-tablet {
+    padding-right: 118px;
+  }
+
+  @include mixins.vp-mobile {
+    padding-right: 0;
+  }
 }
 
 .answers__details {
@@ -31,21 +39,24 @@
   padding: 25px 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   border-top: 1px solid rgba(28, 51, 116, 0.2);
-
-  &:not(.js-details)[open],
-  &.is-open {
-    --border-color: #666;
-    position: relative;
-  }
 }
 
 .answers__summary {
   position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 42px;
   font-size: 24px;
-  font-weight: 500;
-  line-height: 42px;
+  padding-right: 48px;
+  font-weight: 600;
+  line-height: 29px;
   list-style: none;
   cursor: pointer;
+
+  @include mixins.vp-mobile {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .answers__sign {

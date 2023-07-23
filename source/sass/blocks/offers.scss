@@ -109,7 +109,7 @@
   line-height: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  transition: variables.$trans-default;
+  transition: all variables.$trans-default;
 
   &::after {
     content: "";
