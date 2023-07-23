@@ -278,8 +278,8 @@
                   </li>
                 </ul>
               </div>
-              <button class='staff__button-prev'></button>
-              <button class='staff__button-next'></button>
+              <button type="button" class='staff__button-prev'></button>
+              <button type="button" class='staff__button-next'></button>
             </div>
           </div>
         </section>
@@ -482,18 +482,30 @@
         <section class="reviews">
           <div class="container">
           <h2 class="reviews__title">Отзывы</h2>
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <img>
-                <h3 class="reviews__author">Анна Орлова</h3>
-                <p class="reviews__quote">«Хожу в SuperGym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </li>
-              <li class="reviews__item">
-                <img>
-                <h3 class="reviews__author">Анна Орлова</h3>
-                <p class="reviews__quote">«Хожу в SuperGym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-              </li>
-            </ul>
+            <div class="reviews__button-container">
+              <div class="reviews__swiper swiper">
+                <ul class="reviews__list swiper-wrapper">
+                  <li class="reviews__item swiper-slide">
+                    <picture class="reviews__picture">
+                      <source srcset="img/reviews/anna_orlova.webp 1x, img/reviews/anna_orlova@2x.webp 2x" type="image/webp">
+                      <img class="reviews__photo" src="img/reviews/anna_orlova.png" srcset="img/reviews/anna_orlova@2x.png 2x" alt="Анна Орлова." width="80" height="80">
+                    </picture>
+                    <h3 class="reviews__author">Анна Орлова</h3>
+                    <p class="reviews__quote">«Хожу в SuperGym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </li>
+                  <li class="reviews__item swiper-slide">
+                    <picture  class="reviews__picture">
+                      <source srcset="img/reviews/anna_orlova.webp 1x, img/reviews/anna_orlova@2x.webp 2x" type="image/webp">
+                      <img class="reviews__photo" src="img/reviews/anna_orlova.png" srcset="img/reviews/anna_orlova@2x.png 2x" alt="Анна Орлова." width="80" height="80">
+                    </picture>
+                    <h3 class="reviews__author">Анна Орлова</h3>
+                    <p class="reviews__quote">«Хожу в SuperGym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </li>
+                </ul>
+              </div>
+              <button type="button" class='reviews__button-prev'></button>
+              <button type="button" class='reviews__button-next'></button>
+            </div>
           </div>
         </section>
         <section class="contacts">
@@ -521,7 +533,7 @@
                 <p class="contacts__header">Телефон:</p>
                 <p class="contacts__text"><a href="tel:88005555555">8-800-555-55-55</a></p>
                 <p class="contacts__header">Email:</p>
-                <p class="contacts__text"><a href="tmailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
+                <p class="contacts__text"><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></p>
               </div>
             </div>
           </div>

@@ -43,86 +43,15 @@
 }
 
 .staff__button-next, .staff__button-prev {
-  position: absolute;
-  top: calc(50% - 16px);
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  background-color: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all variables.$trans-default;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    width: 22.64px;
-    height: 22.64px;
-    border-bottom: 1px solid variables.$color-basic;
-    border-left: 1px solid variables.$color-basic;
-  }
-
-  &:hover, &:focus {
-    border: 1px solid variables.$color-basic;
-  }
-
-  &:active {
-    background-color: variables.$color-basic;
-
-    &:after {
-      border-left: 1px solid variables.$color-default-white;
-      border-bottom: 1px solid variables.$color-default-white;
-    }
-  }
-
-  &:disabled {
-    opacity: 0.5;
-  }
-
-  @include mixins.vp-mobile {
-    width: 40px;
-    height: 40px;
-
-    &:after {
-      top: 7px;
-    }
-  }
+  @include mixins.next-prev-buttons;
 }
 
 .staff__button-next {
-  right: -75px;
-
-  &::after {
-    left: 8px;
-    transform: rotate(-135deg);
-  }
-
-  @include mixins.vp-mobile {
-    right: -42px;
-
-    &::after {
-      left: 1px;
-    }
-  }
+  @include mixins.next-button;
 }
 
 .staff__button-prev {
-  left: -75px;
-
-  &::after {
-    right: 8px;
-    transform: rotate(45deg);
-  }
-
-  @include mixins.vp-mobile {
-    left: -42px;
-
-    &::after {
-      right: 1px;
-    }
-  }
+  @include mixins.prev-button;
 }
 
 .staff__list {
@@ -148,3 +77,4 @@
   width: min-content;
   margin: 0 auto;
 }
+

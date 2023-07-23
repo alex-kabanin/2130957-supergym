@@ -5,32 +5,6 @@ import './modules/video/video.js';
 import './modules/tabs/tabs.js';
 import './modules/faq/faq.js';
 
-new Swiper('.staff__swiper', {
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 40,
-  navigation: {
-    nextEl: '.staff__button-next',
-    prevEl: '.staff__button-prev',
-  },
-  breakpoints: {
-    320: {
-      width: 226,
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      width: 566,
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
-});
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -45,6 +19,44 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+
+    // eslint-disable-next-line no-undef,no-new
+    new Swiper('.staff__swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 40,
+      navigation: {
+        nextEl: '.staff__button-next',
+        prevEl: '.staff__button-prev',
+      },
+      breakpoints: {
+        320: {
+          width: 226,
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          width: 566,
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    });
+
+    // eslint-disable-next-line no-undef,no-new
+    new Swiper('.reviews__swiper', {
+      loop: false,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.reviews__button-next',
+        prevEl: '.reviews__button-prev',
+      },
+    });
+
     initModals();
     const form = new Form();
     window.form = form;

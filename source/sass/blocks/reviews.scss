@@ -1,0 +1,102 @@
+@use "../variables";
+@use "../mixins";
+
+.reviews {
+  padding: 120px 0 121px;
+
+  @include mixins.vp-tablet {
+    padding: 100px 0;
+  }
+}
+
+.reviews__button-container {
+  position: relative;
+  width: min-content;
+  margin: 0 auto;
+}
+
+.reviews__button-prev, .reviews__button-next {
+  @include mixins.next-prev-buttons;
+}
+
+.reviews__button-prev {
+  @include mixins.prev-button;
+}
+
+.reviews__button-next {
+  @include mixins.next-button;
+}
+
+.reviews__swiper {
+  width: 560px;
+  margin: 0 auto;
+
+  @include mixins.vp-tablet {
+    width: 566px;
+  }
+
+  @include mixins.vp-mobile {
+    width: 226px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 37px;
+  font-size: 54px;
+  font-family: variables.$ff-primary;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: variables.$letter-space;
+  text-align: center;
+
+  @include mixins.vp-tablet {
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 28px;
+  padding: 62px;
+  background-color: #1C3374;
+  color: variables.$color-default-white;
+
+  @include mixins.vp-tablet {
+    padding: 62px 65px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 40px 25px;
+  }
+}
+
+.reviews__photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews__author {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.reviews__quote {
+  font-weight: 400;
+}
+
+.reviews__picture {
+  grid-row: 1/3;
+}
