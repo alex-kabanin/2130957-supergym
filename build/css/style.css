@@ -2333,6 +2333,11 @@ button,
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .hero__btn {
+    padding: 25px;
+  }
+}
 
 .footer {
   position: relative;
@@ -4201,6 +4206,11 @@ button,
   width: 100%;
   outline: 1px solid rgba(16, 38, 84, 0.2);
   outline-offset: 0;
+}
+@media (max-width: 767px) {
+  .faq__btn {
+    padding: 14px;
+  }
 }
 
 /* @mixin hover-focus {

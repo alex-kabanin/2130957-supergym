@@ -125,4 +125,8 @@
   @include mixins.vp-tablet {
     width: 100%;
   }
+
+  @include mixins.vp-mobile {
+    padding: 25px;
+  }
 }
