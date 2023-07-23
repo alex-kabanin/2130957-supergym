@@ -8,11 +8,11 @@ tabsContentItems.forEach((tabsContentItem, index) => {
   const tabsContentBtn = tabsContentBtns[index];
 
   tabsContentItem.addEventListener('mouseover', () => {
-    tabsContentBtn.classList.add('btn--dark-hovered');
+    tabsContentBtn.classList.add('btn--dark-active');
   });
 
   tabsContentItem.addEventListener('mouseout', () => {
-    tabsContentBtn.classList.remove('btn--dark-hovered');
+    tabsContentBtn.classList.remove('btn--dark-active');
   });
 });
 

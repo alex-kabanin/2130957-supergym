@@ -26,3 +26,16 @@
   line-height: 65px;
   letter-spacing: variables.$letter-space;
 }
+
+.faq__btn {
+  width: 100%;
+  outline: 1px solid rgba(16, 38, 84, 0.2);
+  outline-offset: 0;
+
+
+}
+
+
+.faq__item {
+  margin-bottom: 10px;
+}

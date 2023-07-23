@@ -80,9 +80,9 @@
           <div class="container">
             <h2 class="subscription__title">Абонементы</h2>
             <ul class="subscription__tabs-control tabs-control">
-              <li class="tabs-control__item"><button class="tabs-control__button tabs-control__button--active" id="tab-1">1 месяц</button></li>
-              <li class="tabs-control__item"><button class="tabs-control__button" id="tab-2">6 месяцев</button></li>
-              <li class="tabs-control__item"><button class="tabs-control__button" id="tab-3">12 месяцев</button></li>
+              <li class="tabs-control__item"><button type="button" class="tabs-control__button tabs-control__button--active" id="tab-1">1 месяц</button></li>
+              <li class="tabs-control__item"><button type="button" class="tabs-control__button" id="tab-2">6 месяцев</button></li>
+              <li class="tabs-control__item"><button type="button" class="tabs-control__button" id="tab-3">12 месяцев</button></li>
             </ul>
             <ul class="subscription__tabs-content tabs-content">
               <li class="tabs-content__wrapper">
@@ -351,42 +351,128 @@
             <h2 class="faq__title">Вопросы и ответы</h2>
             <div class="faq__wrapper">
               <ul class="faq__block">
-                <li>Центр</li>
-                <li>Абонемент</li>
-                <li>Услуги</li>
-                <li>Правила</li>
+                <li class="faq__item"><button type="button" class="faq__btn btn btn--dark btn--dark-active" id="faq-1">Центр</button></li>
+                <li  class="faq__item"><button type="button" class="faq__btn btn--dark btn" id="faq-2">Абонемент</button></li>
+                <li  class="faq__item"><button type="button" class="faq__btn btn--dark btn" id="faq-3">Услуги</button></li>
+                <li  class="faq__item"><button type="button" class="faq__btn btn--dark btn" id="faq-4">Правила</button></li>
               </ul>
-              <ul class="faq__answers answers">
-                <li class="answers__wrapper">
-                  <details class="answers__item">
-                    <summary class="answers__summary">Занятия с тренером входят в абонемент?
-                      <div class="answers__sign"></div>
-                    </summary>
-                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
-                  </details>
-                </li>
-                <li class="answers__wrapper">
-                  <details class="answers__item">
+              <ul class="faq__answers answers answers--active">
+                <li class="answers__item">
+                  <details class="answers__details">
                     <summary class="answers__summary">Можно ли заморозить абонемент?
                       <div class="answers__sign"></div>
                     </summary>
                     <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                   </details>
                 </li>
-                <li class="answers__wrapper">
-                  <details class="answers__item">
+                <li class="answers__item">
+                  <details class="answers__details">
                     <summary class="answers__summary">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
                       <div class="answers__sign"></div>
                     </summary>
                     <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
                   </details>
                 </li>
-                <li class="answers__wrapper">
-                  <details class="answers__item">
+                <li class="answers__item">
+                  <details class="answers__details">
                     <summary class="answers__summary">Что такое семейный доступ и доступ для друзей?
                       <div class="answers__sign"></div>
                     </summary>
                     <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+              </ul>
+              <ul class="faq__answers answers">
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Занятия с тренером входят в абонемент?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Можно ли заморозить абонемент?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Что такое семейный доступ и доступ для друзей?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+              </ul>
+              <ul class="faq__answers answers">
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Занятия с тренером входят в абонемент?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Есть ли лимит по посещениям тренажерного зала и групповых занятий?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Можно ли заморозить абонемент?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                  </details>
+                </li>
+              </ul>
+              <ul class="faq__answers answers">
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Есть в фитнес-центре дресс-код?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Можно ли приводить с собой детей на тренировки?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Какие дополнительные правила посещения центра?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+                  </details>
+                </li>
+                <li class="answers__item">
+                  <details class="answers__details">
+                    <summary class="answers__summary">Нужна ли медицинская справка для посещения залов и бассейна?
+                      <div class="answers__sign"></div>
+                    </summary>
+                    <p class="answers__reply">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
                   </details>
                 </li>
               </ul>

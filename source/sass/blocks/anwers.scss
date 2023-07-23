@@ -2,12 +2,17 @@
 @use "../mixins";
 
 .answers {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--active {
+    display: block;
+  }
 }
 
-.answers__wrapper {
+.answers__item {
   position: relative;
 }
 
@@ -20,7 +25,7 @@
   overflow: hidden;
 }
 
-.answers__item {
+.answers__details {
   max-height: 500px;
   margin-bottom: -1px;
   padding: 25px 0;
@@ -78,7 +83,7 @@
   }
 }
 
-.answers__item[open] .answers__sign {
+.answers__details[open] .answers__sign {
   background-color: variables.$color-basic;
 
   &::after {
@@ -92,7 +97,7 @@
   }
 }
 
-.answers__wrapper:hover .answers__sign {
+.answers__summary:hover .answers__sign {
   background-color: variables.$color-basic;
 
   &::after, &::before {
@@ -100,11 +105,11 @@
   }
 }
 
-.answers__item summary ~ .animated {
+.answers__details summary ~ .animated {
   overflow: hidden;
 }
-.answers__item[open] summary ~ .animated {
-  animation: sweep 1s ease;
+.answers__details[open] summary ~ .animated {
+  animation: sweep 1.5s ease;
 }
 
 @keyframes sweep {
