@@ -182,6 +182,24 @@
     font-size: 18px;
     line-height: 27px;
   }
+
+  a {
+    color: variables.$color-basic;
+    transition: all variables.$trans-default;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      opacity: 0.8;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
 .contacts__content {

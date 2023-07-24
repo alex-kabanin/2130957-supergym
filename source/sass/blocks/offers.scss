@@ -108,6 +108,7 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
+  color: variables.$color-basic;
   text-transform: uppercase;
   transition: all variables.$trans-default;
 
@@ -121,7 +122,7 @@
   }
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   &:focus::after {
@@ -134,6 +135,10 @@
 
   &:focus-visible {
     outline: none;
+  }
+
+  &:active {
+    opacity: 1;
   }
 
   &:active::after {

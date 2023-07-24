@@ -72,10 +72,25 @@
   padding: 68px 20px;
   background-color: variables.$color-default-white;
   border: 7px solid transparent;
-  transition: all variables.$trans-default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    right: -7px;
+    top: -7px;
+    bottom: -7px;
+    border: 7px solid variables.$color-default-white;
+    transition: all variables.$trans-default;
+    pointer-events: none;
+  }
 
   &:hover {
     border-image: linear-gradient(148.82deg,#ED0233 .85%,#003EB7 100%) 1;
+
+    &::before {
+      border: 7px solid transparent;
+    }
   }
 }
 

@@ -1,13 +1,13 @@
-const detailsDetails = document.querySelectorAll('.answers__details');
-const answers = document.querySelectorAll('.answers');
-const faqBlock = document.querySelector('.faq__block');
-const faqBtn = document.querySelectorAll('.faq__btn');
+const detailsDetails = document.querySelectorAll('[data-anwers-details]');
+const answers = document.querySelectorAll('[data-anwers]');
+const faqBlock = document.querySelector('[data-faq-block]');
+const faqBtn = document.querySelectorAll('[data-faq-btn]');
 
 detailsDetails.forEach((detailsItem) => {
-  const answersSummary = detailsItem.querySelector('.answers__summary');
+  const answersSummary = detailsItem.querySelector('[data-answers-summary]');
 
   answersSummary.addEventListener('click', () => {
-    const answersReply = detailsItem.querySelector('.answers__reply');
+    const answersReply = detailsItem.querySelector('[data-answers-reply]');
     answersReply.classList.add('animated');
 
     setTimeout(() => {

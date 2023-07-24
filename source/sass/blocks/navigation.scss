@@ -23,6 +23,19 @@
   letter-spacing: variables.$letter-space;
   transition: all variables.$trans-default;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @include mixins.vp-tablet {
     font-size: 24px;
     line-height: 29px;

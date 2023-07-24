@@ -85,10 +85,7 @@
 
   &:active {
     outline: none;
-  }
-
-  &:active {
-    border-bottom: 1px solid transparent;
+    box-shadow: none;
   }
 
   @include mixins.vp-mobile {

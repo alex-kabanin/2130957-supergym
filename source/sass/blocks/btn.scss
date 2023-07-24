@@ -43,5 +43,9 @@
       background-image: linear-gradient(97.05deg,#ED0233 0%, #003EB7 100%);
       outline: 2px solid transparent;
     }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+    }
   }
 }

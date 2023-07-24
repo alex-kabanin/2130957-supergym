@@ -65,16 +65,6 @@ pre {
 a {
   background-color: transparent;
 }
-a:hover {
-  opacity: 0.8;
-}
-a:focus {
-  opacity: 0.8;
-  outline: none;
-}
-a:active {
-  opacity: 0.5;
-}
 
 /**
 * 1. Remove the bottom border in Chrome 57-
@@ -1492,6 +1482,9 @@ button,
   background-image: linear-gradient(97.05deg, #ED0233 0%, #003EB7 100%);
   outline: 2px solid transparent;
 }
+.btn--dark:active {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .modal {
   position: fixed;
@@ -2175,6 +2168,16 @@ button,
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.navigation__link:hover {
+  opacity: 0.8;
+}
+.navigation__link:focus {
+  opacity: 0.8;
+  outline: none;
+}
+.navigation__link:active {
+  opacity: 0.5;
+}
 @media (max-width: 1199px) {
   .navigation__link {
     font-size: 24px;
@@ -2454,9 +2457,8 @@ button,
 }
 .footer__link:active {
   outline: none;
-}
-.footer__link:active {
-  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (max-width: 767px) {
   .footer__link {
@@ -2900,12 +2902,25 @@ button,
   padding: 68px 20px;
   background-color: #ffffff;
   border: 7px solid transparent;
+}
+.tabs-content__item::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  right: -7px;
+  top: -7px;
+  bottom: -7px;
+  border: 7px solid #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  pointer-events: none;
 }
 .tabs-content__item:hover {
   -o-border-image: linear-gradient(148.82deg, #ED0233 0.85%, #003EB7 100%) 1;
      border-image: linear-gradient(148.82deg, #ED0233 0.85%, #003EB7 100%) 1;
+}
+.tabs-content__item:hover::before {
+  border: 7px solid transparent;
 }
 
 .tabs-content__title {
@@ -4025,6 +4040,7 @@ button,
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
+  color: #102654;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -4038,7 +4054,7 @@ button,
   border-bottom: 1px solid currentColor;
 }
 .offers__list-link:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .offers__list-link:focus::after {
   left: 0;
@@ -4049,6 +4065,9 @@ button,
 }
 .offers__list-link:focus-visible {
   outline: none;
+}
+.offers__list-link:active {
+  opacity: 1;
 }
 .offers__list-link:active::after {
   left: 10px;
@@ -4669,6 +4688,21 @@ button,
     font-size: 18px;
     line-height: 27px;
   }
+}
+.contacts__text a {
+  color: #102654;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contacts__text a:hover {
+  opacity: 0.8;
+}
+.contacts__text a:focus {
+  opacity: 0.8;
+  outline: none;
+}
+.contacts__text a:active {
+  opacity: 0.5;
 }
 
 .contacts__content--schedule {

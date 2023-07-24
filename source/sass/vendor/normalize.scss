@@ -78,18 +78,6 @@ pre {
 a {
   background-color: transparent;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:focus {
-    opacity: 0.8;
-    outline: none;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
 }
 
 /**

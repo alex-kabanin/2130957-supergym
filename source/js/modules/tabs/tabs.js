@@ -1,8 +1,8 @@
-const tabsContentItems = document.querySelectorAll('.tabs-content__item');
-const tabsContentBtns = document.querySelectorAll('.tabs-content__btn');
-const tabLists = document.querySelectorAll('.tabs-content__list');
-const controlButton = document.querySelectorAll('.tabs-control__button');
-const tabsControl = document.querySelector('.tabs-control');
+const tabsContentItems = document.querySelectorAll('[data-tabs-content-item]');
+const tabsContentBtns = document.querySelectorAll('[data-tabs-content-btn]');
+const tabLists = document.querySelectorAll('[data-tabs-content-list]');
+const controlButton = document.querySelectorAll('[data-tabs-control-btn]');
+const tabsControl = document.querySelector('[data-tabs-control]');
 
 tabsContentItems.forEach((tabsContentItem, index) => {
   const tabsContentBtn = tabsContentBtns[index];
@@ -58,7 +58,7 @@ function smoothScrollToAnchor(anchorId) {
   }
 }
 
-const anchorLink = document.querySelector('.hero__btn');
+const anchorLink = document.querySelector('[data-hero-btn]');
 
 anchorLink.addEventListener('click', (event) => {
   event.preventDefault();
