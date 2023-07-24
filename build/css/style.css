@@ -1174,6 +1174,13 @@ button.swiper-pagination-bullet {
 }
 @font-face {
   font-style: normal;
+  font-weight: 700;
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "Alumni Sans";
   src: url("../fonts/AlumniSans-Regular.woff2") format("woff2"), url("../fonts/AlumniSans-Regular.woff") format("woff");
@@ -2448,9 +2455,14 @@ button,
   line-height: 22px;
   color: #ffffff;
 }
-.footer__link:hover {
-  -webkit-box-shadow: 0 1px 0 0 #ffffff;
-          box-shadow: 0 1px 0 0 #ffffff;
+.footer__link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  left: 10px;
+  right: 10px;
+  background-color: #ffffff;
 }
 .footer__link:focus {
   outline: 1px solid #ffffff;
