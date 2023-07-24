@@ -3,9 +3,12 @@
 
 .contacts {
   background-image: linear-gradient(90deg, variables.$color-basic 50%, variables.$color-default-white 50%);
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg,#102654 50%, #74819C 50%) 1;
 
   @include mixins.vp-tablet {
     background-image: none;
+    border: none;
   }
 }
 
@@ -18,14 +21,20 @@
   }
 }
 
-.contacts__form {
+.contacts__form-container {
   width: 50%;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+  }
+}
+
+.contacts__form {
   padding: 57px 170px 70px 103px;
   color: variables.$color-default-white;
   background-color: variables.$color-basic;
 
   @include mixins.vp-tablet {
-    width: 100%;
     padding: 70px 163px 70px 133px;
   }
 
@@ -95,6 +104,16 @@
   color: variables.$color-default-white;
   background-color: variables.$color-basic;
   border-bottom: 1px solid #74819C;
+  transition: all variables.$trans-default;
+
+  &:hover {
+    border-bottom: 1px solid variables.$color-default-white;
+  }
+
+  &:focus, &:active {
+    outline: 1px solid variables.$color-default-white;
+    outline-offset: -1px;
+  }
 }
 
 .contacts__input::placeholder {

@@ -527,18 +527,22 @@
         <section class="contacts">
           <h2 class="visually-hidden">Бесплатное занятие и Контакты</h2>
           <div class="container">
-            <form id="form" class="contacts__form" action="https://echo.htmlacademy.ru/courses" method="post">
-              <h3 class="contacts__title">Бесплатное занятие</h3>
-              <fieldset class="contacts__fields">
-                <label class="contacts__label">
-                  <input class="contacts__input" id="first-name" type="text" name="first-name" placeholder="Имя">
-                </label>
-                <label class="contacts__label">
-                  <input class="contacts__input" id="phone" type="tel" name="last-name" placeholder="Телефон" oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
-                </label>
-              </fieldset>
-              <button id="contacts-submit" class="contacts__btn btn" type="submit">Отправить</button>
-            </form>
+            <div class="contacts__form-container" data-form-validate="true">
+              <form id="form" class="contacts__form" action="https://echo.htmlacademy.ru/courses" method="post">
+                <h3 class="contacts__title">Бесплатное занятие</h3>
+                <fieldset class="contacts__fields">
+                  <label class="contacts__label">
+                    <span class="visually-hidden">Имя</span>
+                    <input class="contacts__input" id="first-name" type="text" name="first-name" minlength="2" maxlength="20" placeholder="Имя" aria-selected="true" data-validate="required" data-error-message="Введите имя" required>
+                  </label>
+                  <label class="contacts__label">
+                    <span class="visually-hidden">Телефон</span>
+                    <input class="contacts__input" id="phone" type="tel" name="phone" minlength="11" maxlength="20" placeholder="Телефон"  aria-selected="true" data-validate="required" data-error-message="Введите номер" required>
+                  </label>
+                </fieldset>
+                <button id="contacts-submit" class="contacts__btn btn" type="submit">Отправить</button>
+              </form>
+            </div>
             <div class="contacts__us">
               <h3 class="contacts__title">Контакты</h3>
               <div class="contacts__wrapper">
