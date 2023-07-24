@@ -8,11 +8,11 @@ tabsContentItems.forEach((tabsContentItem, index) => {
   const tabsContentBtn = tabsContentBtns[index];
 
   tabsContentItem.addEventListener('mouseover', () => {
-    tabsContentBtn.classList.add('btn--dark-active');
+    tabsContentBtn.classList.add('is-active');
   });
 
   tabsContentItem.addEventListener('mouseout', () => {
-    tabsContentBtn.classList.remove('btn--dark-active');
+    tabsContentBtn.classList.remove('is-active');
   });
 });
 
@@ -23,9 +23,9 @@ tabLists.forEach((tabList, index) => {
 
 const clearFilter = (button) => {
   controlButton.forEach((element) =>
-    element.classList.remove('tabs-control__button--active')
+    element.classList.remove('is-active')
   );
-  button.classList.add('tabs-control__button--active');
+  button.classList.add('is-active');
 };
 
 const onControlTabClick = (evt) => {
@@ -38,9 +38,9 @@ const onControlTabClick = (evt) => {
   tabLists.forEach((tabItem) => {
     const dataTabValue = tabItem.getAttribute('data-tab');
     if (targetId === dataTabValue) {
-      tabItem.classList.add('tabs-content__list--active');
+      tabItem.classList.add('is-active');
     } else {
-      tabItem.classList.remove('tabs-content__list--active');
+      tabItem.classList.remove('is-active');
     }
   });
 };

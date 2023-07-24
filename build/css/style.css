@@ -1487,7 +1487,7 @@ button,
   color: #102654;
   outline: 2px solid #102654;
 }
-.btn--dark:hover, .btn--dark:focus, .btn--dark-active {
+.btn--dark:hover, .btn--dark:focus, .btn--dark.is-active {
   color: #ffffff;
   background-image: linear-gradient(97.05deg, #ED0233 0%, #003EB7 100%);
   outline: 2px solid transparent;
@@ -2801,17 +2801,18 @@ button,
 .tabs-control__button:hover::after, .tabs-control__button:focus::after, .tabs-control__button:active::after {
   background-color: #D10A42;
 }
-.tabs-control__button--active {
-  opacity: 1;
-}
-.tabs-control__button--active::after {
-  background-color: #D10A42;
-}
 @media (max-width: 1199px) {
   .tabs-control__button {
     font-size: 18px;
     line-height: 20px;
   }
+}
+
+.tabs-control__button.is-active {
+  opacity: 1;
+}
+.tabs-control__button.is-active::after {
+  background-color: #D10A42;
 }
 
 .tabs-content {
@@ -2869,7 +2870,8 @@ button,
   display: none;
   list-style: none;
 }
-.tabs-content__list--active {
+
+.tabs-content__list.is-active {
   display: -ms-grid;
   display: grid;
   gap: 40px;
@@ -2877,7 +2879,7 @@ button,
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media (max-width: 1199px) {
-  .tabs-content__list--active {
+  .tabs-content__list.is-active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2886,7 +2888,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .tabs-content__list--active {
+  .tabs-content__list.is-active {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 35px;
@@ -3746,7 +3748,8 @@ button,
   padding: 0;
   list-style: none;
 }
-.answers--active {
+
+.answers.is-active {
   display: block;
 }
 

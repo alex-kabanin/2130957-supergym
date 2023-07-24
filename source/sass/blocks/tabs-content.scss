@@ -49,21 +49,21 @@
   padding: 0;
   display: none;
   list-style: none;
+}
 
-  &--active {
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr;
+.tabs-content__list.is-active {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
 
-    @include mixins.vp-tablet {
-      justify-content: center;
-      grid-template-columns: 442px;
-    }
+  @include mixins.vp-tablet {
+    justify-content: center;
+    grid-template-columns: 442px;
+  }
 
-    @include mixins.vp-mobile {
-      grid-template-columns: 1fr;
-      gap: 35px;
-    }
+  @include mixins.vp-mobile {
+    grid-template-columns: 1fr;
+    gap: 35px;
   }
 }
 

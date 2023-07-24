@@ -23,9 +23,9 @@ answers.forEach((tabList, index) => {
 
 const clearFaqBtn = (button) => {
   faqBtn.forEach((element) =>
-    element.classList.remove('btn--dark-active')
+    element.classList.remove('is-active')
   );
-  button.classList.add('btn--dark-active');
+  button.classList.add('is-active');
 };
 
 const onControlFaqClick = (evt) => {
@@ -38,9 +38,9 @@ const onControlFaqClick = (evt) => {
   answers.forEach((tabItem) => {
     const dataFaqValue = tabItem.getAttribute('data-faq');
     if (targetId === dataFaqValue) {
-      tabItem.classList.add('answers--active');
+      tabItem.classList.add('is-active');
     } else {
-      tabItem.classList.remove('answers--active');
+      tabItem.classList.remove('is-active');
     }
   });
 };

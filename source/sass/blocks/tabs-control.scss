@@ -54,17 +54,16 @@
     background-color: #D10A42;
   }
 
-  &--active {
-    opacity: 1;
-  }
-
-  &--active::after {
-    background-color: #D10A42;
-  }
-
   @include mixins.vp-tablet {
     font-size: 18px;
     line-height: 20px;
   }
 }
 
+.tabs-control__button.is-active {
+  opacity: 1;
+
+  &::after {
+    background-color: #D10A42;
+  }
+}
