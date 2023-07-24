@@ -21,20 +21,14 @@
   }
 }
 
-.contacts__form-container {
-  width: 50%;
-
-  @include mixins.vp-tablet {
-    width: 100%;
-  }
-}
-
 .contacts__form {
+  width: 50%;
   padding: 57px 170px 70px 103px;
   color: variables.$color-default-white;
   background-color: variables.$color-basic;
 
   @include mixins.vp-tablet {
+    width: 100%;
     padding: 70px 163px 70px 133px;
   }
 
@@ -111,8 +105,13 @@
   }
 
   &:focus, &:active {
+    padding: 7px;
     outline: 1px solid variables.$color-default-white;
     outline-offset: -1px;
+  }
+
+  &[aria-invalid="true"] {
+  border-bottom: 1px solid variables.$color-error;
   }
 }
 

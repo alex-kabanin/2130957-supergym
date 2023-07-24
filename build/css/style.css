@@ -1427,6 +1427,15 @@ button,
   transition: none !important;
 }
 
+.input-message.is-invalid {
+  display: block;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #FF121F;
+}
+
 .container {
   width: 100%;
   max-width: 1366px;
@@ -4465,22 +4474,15 @@ button,
   }
 }
 
-.contacts__form-container {
-  width: 50%;
-}
-@media (max-width: 1199px) {
-  .contacts__form-container {
-    width: 100%;
-  }
-}
-
 .contacts__form {
+  width: 50%;
   padding: 57px 170px 70px 103px;
   color: #ffffff;
   background-color: #102654;
 }
 @media (max-width: 1199px) {
   .contacts__form {
+    width: 100%;
     padding: 70px 163px 70px 133px;
   }
 }
@@ -4566,8 +4568,12 @@ button,
   border-bottom: 1px solid #ffffff;
 }
 .contacts__input:focus, .contacts__input:active {
+  padding: 7px;
   outline: 1px solid #ffffff;
   outline-offset: -1px;
+}
+.contacts__input[aria-invalid=true] {
+  border-bottom: 1px solid #FF121F;
 }
 
 .contacts__input::-webkit-input-placeholder {
