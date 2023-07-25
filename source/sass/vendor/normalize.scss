@@ -1,3 +1,5 @@
+@use "../variables";
+
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -24,6 +26,13 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
+  font-size: 16px;
+  font-family: variables.$ff-secondary;
+  line-height: 24px;
+  font-weight: 300;
+  color: variables.$color-basic;
+  background-color: variables.$color-default-white;
 }
 
 /**

@@ -66,4 +66,13 @@ anchorLink.addEventListener('click', (event) => {
   smoothScrollToAnchor(targetId);
 });
 
+tabsContentItems.forEach((item) => {
+  const shadowPriceElement = item.querySelector('[data-shadow-price]');
+  const priceElement = item.querySelector('[data-price]');
+
+  if (priceElement && shadowPriceElement) {
+    shadowPriceElement.textContent = priceElement.textContent;
+  }
+});
+
 export {tabsContentItems, tabsContentBtns};
