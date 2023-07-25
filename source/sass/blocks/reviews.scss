@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .reviews {
-  padding: 120px 0 121px;
+  padding: 120px 0;
 
   @include mixins.vp-tablet {
     padding: 100px 0;
@@ -75,7 +75,7 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 0 28px;
-  padding: 62px;
+  padding: 61px 62px 54px;
   background-color: #1C3374;
   color: variables.$color-default-white;
 
@@ -102,7 +102,7 @@
 }
 
 .reviews__author {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 700;
   line-height: 20px;
@@ -114,6 +114,7 @@
 }
 
 .reviews__quote {
+  line-height: 23px;
   font-weight: 400;
 
   @include mixins.vp-mobile {

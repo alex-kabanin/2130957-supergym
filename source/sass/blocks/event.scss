@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .event {
-  padding: 120px 0 106px 0;
+  padding: 128px 0 106px 0;
 
   @include mixins.vp-tablet {
     padding: 100px 0;
@@ -28,9 +28,10 @@
 
 .event__left-side {
   display: grid;
+  align-content: flex-start;
   grid-template-columns: 201px 92px;
-  gap: 25px 50px;
-  padding: 80px 78px;
+  gap: 29px 50px;
+  padding: 87px 78px 74px;
   color: variables.$color-default-white;
   background-color: variables.$color-banner;
 
@@ -65,6 +66,7 @@
 }
 
 .event__title {
+  margin-left: 13px;
   font-size: 82px;
   font-family: variables.$ff-primary;
   font-weight: 600;
@@ -73,6 +75,7 @@
   letter-spacing: variables.$letter-space;
 
   @include mixins.vp-tablet {
+    margin-left: 0;
     font-size: 48px;
     line-height: 50px;
   }
@@ -93,7 +96,7 @@
 
 .event__btn {
   grid-column: 1/3;
-  padding: 29px;
+  padding: 27px;
 
   @include mixins.vp-tablet {
     padding: 16px;
@@ -106,7 +109,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 21px;
 
   @include mixins.vp-tablet {
     gap: 10px;
@@ -132,7 +135,7 @@
   gap: 7px;
   width: max-content;
   font-size: 40px;
-  line-height: 40px;
+  line-height: 31px;
   font-weight: 700;
 
   &::before {

@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .faq {
-  padding: 120px 0 121px;
+  padding: 111px 0 118px;
   background-color: variables.$color-additional-background;
 
   @include mixins.vp-tablet {
@@ -31,7 +31,7 @@
 .faq__block {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 11px;
   align-content: flex-start;
   margin: 0;
   padding: 0;
@@ -70,6 +70,7 @@
 
 .faq__btn {
   width: 100%;
+  padding: 18px;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;

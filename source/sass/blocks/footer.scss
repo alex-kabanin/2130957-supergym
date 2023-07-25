@@ -26,6 +26,10 @@
 }
 
 .footer__logo {
+  padding-top: 9px;
+  display: flex;
+  align-items: end;
+
   @include mixins.vp-mobile {
     position: absolute;
     top: 54px;

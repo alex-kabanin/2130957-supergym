@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .offers {
-  padding: 124px 0 120px;
+  padding: 136px 0 128px;
 
   @include mixins.vp-tablet {
     padding: 100px 0;
@@ -55,7 +55,7 @@
 .offers__item {
   display: flex;
   flex-direction: column;
-  padding: 17px 28px 25px;
+  padding: 17px 28px 20px;
   border: 7px solid transparent;
   border-image: linear-gradient(148.82deg,#ed0233 .85%,#003eb7 100%) 1;
 
@@ -89,6 +89,7 @@
 }
 
 .offers__list-title {
+  margin-bottom: 3px;
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
@@ -117,7 +118,7 @@
     position: absolute;
     left: 10px;
     right: 10px;
-    bottom: 5px;
+    bottom: 8px;
     border-bottom: 1px solid currentColor;
   }
 
@@ -164,7 +165,7 @@
 .offers__list-content {
   display: flex;
   flex-direction: column;
-  padding: 35px 45px 44px;
+  padding: 35px 45px 37px;
 }
 
 .offers__item--large .offers__list-title {
@@ -173,7 +174,7 @@
 
 .offers__list-price {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 16px;
   font-size: 70px;
   line-height: 70px;
 
@@ -184,7 +185,7 @@
 
 .offers__item--large .offers__list-caption {
   font-size: 18px;
-  line-height: 19px;
+  line-height: 23px;
 
   @include mixins.vp-mobile {
     margin-bottom: 30px;
