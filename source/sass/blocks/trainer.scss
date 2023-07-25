@@ -16,13 +16,13 @@
   overflow: hidden;
 }
 
-.trainer__title {
+.trainer h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
 }
 
-.trainer__description {
+.trainer p {
   display: none;
   margin-bottom: 45px;
   font-weight: 400;
@@ -44,7 +44,7 @@
   }
 }
 
-.trainer__list {
+.trainer ul {
   display: none;
   font-size: 14px;
   font-weight: 400;
@@ -54,7 +54,7 @@
   list-style: none;
 }
 
-.trainer__list li {
+.trainer li {
   position: relative;
 
   &::before {
@@ -74,12 +74,12 @@
   background-color: rgba(16, 38, 84, 0.89);
 }
 
-.trainer__item:hover .trainer__list, .trainer__item:hover .trainer__description,
-.trainer__item:focus .trainer__list, .trainer__item:focus .trainer__description {
+.trainer__item:hover ul, .trainer__item:hover p,
+.trainer__item:focus ul, .trainer__item:focus p {
   display: block;
 }
 
-.trainer__photo {
+.trainer img {
   width: 260px;
   height: 294px;
   object-fit: cover;

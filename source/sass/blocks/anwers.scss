@@ -16,7 +16,7 @@
   position: relative;
 }
 
-.answers__reply {
+.answers p {
   margin-top: 15px;
   padding-right: 200px;
   font-size: 18px;
@@ -33,7 +33,7 @@
   }
 }
 
-.answers__details {
+.answers details {
   max-height: 500px;
   margin-bottom: -1px;
   padding: 25px 0;
@@ -41,7 +41,7 @@
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.answers__summary {
+.answers summary {
   position: relative;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@
   }
 }
 
-.answers__details[open] .answers__sign {
+.answers details[open] .answers__sign {
   background-color: variables.$color-basic;
 
   &::after {
@@ -108,7 +108,7 @@
   }
 }
 
-.answers__summary:hover .answers__sign {
+.answers summary:hover .answers__sign {
   background-color: variables.$color-basic;
 
   &::after, &::before {
@@ -116,10 +116,10 @@
   }
 }
 
-.answers__details summary ~ .animated {
+.answers details summary ~ .animated {
   overflow: hidden;
 }
-.answers__details[open] summary ~ .animated {
+.answers details[open] summary ~ .animated {
   animation: sweep 1.5s ease;
 }
 

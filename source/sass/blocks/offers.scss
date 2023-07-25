@@ -13,7 +13,7 @@
   }
 }
 
-.offers__title {
+.offers h2 {
   margin-bottom: 34px;
   font-size: 54px;
   font-family: variables.$ff-primary;
@@ -88,14 +88,14 @@
   }
 }
 
-.offers__list-title {
+.offers h3 {
   margin-bottom: 3px;
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
 }
 
-.offers__list-caption {
+.offers p {
   font-weight: 400;
 }
 
@@ -168,11 +168,11 @@
   padding: 35px 45px 37px;
 }
 
-.offers__item--large .offers__list-title {
+.offers__item--large h3 {
   font-size: 28px;
 }
 
-.offers__list-price {
+.offers h3 span {
   display: block;
   margin-bottom: 16px;
   font-size: 70px;
@@ -183,7 +183,7 @@
   }
 }
 
-.offers__item--large .offers__list-caption {
+.offers__item--large p {
   font-size: 18px;
   line-height: 23px;
 
@@ -197,7 +197,7 @@
   line-height: 16px;
 }
 
-.offers__list-image {
+.offers img {
   width: 280px;
   height: 462px;
   object-fit: cover;

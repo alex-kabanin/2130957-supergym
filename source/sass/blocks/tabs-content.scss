@@ -94,7 +94,7 @@
   }
 }
 
-.tabs-content__title {
+.tabs-content h3 {
   margin-bottom: 10px;
   font-size: 26px;
   font-weight: 700;
@@ -107,7 +107,7 @@
   }
 }
 
-.tabs-content__caption {
+.tabs-content h4 {
   margin-bottom: 81px;
   font-weight: 400;
 
@@ -116,7 +116,7 @@
   }
 }
 
-.tabs-content__price {
+.tabs-content p {
   position: relative;
   margin-bottom: 48px;
   font-size: 60px;
@@ -146,8 +146,9 @@
   }
 }
 
-.tabs-content__shadow-price {
+.tabs-content span {
   position: absolute;
+  display: block;
   bottom: 6px;
   width: 100%;
   font-weight: 700;
