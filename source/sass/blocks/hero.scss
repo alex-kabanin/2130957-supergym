@@ -103,8 +103,7 @@
   }
 }
 
-.hero__image {
-  display: block;
+.hero img {
 
   @include mixins.vp-tablet {
     width: 324px;

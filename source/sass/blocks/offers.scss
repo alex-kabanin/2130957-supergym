@@ -99,7 +99,7 @@
   font-weight: 400;
 }
 
-.offers__list-link {
+.offers a {
   position: relative;
   display: block;
   width: min-content;
@@ -145,15 +145,11 @@
   &:active::after {
     left: 10px;
     right: 10px;
-    bottom: 5px;
+    bottom: 8px;
     border-bottom: 1px solid currentColor;
     border-left: none;
     border-right: none;
     border-top: none;
-  }
-
-  &--white {
-    color: variables.$color-default-white;
   }
 
   @include mixins.vp-mobile {
@@ -192,9 +188,10 @@
   }
 }
 
-.offers__item--large .offers__list-link {
+.offers__item--large a {
   font-size: 14px;
   line-height: 16px;
+  color: variables.$color-default-white;
 }
 
 .offers img {
