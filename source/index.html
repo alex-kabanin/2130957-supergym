@@ -545,7 +545,7 @@
             </label>
             <label class="contacts__label" data-required data-validate-type="phone" data-message-base="Введите телефон">
               <span class="visually-hidden">Телефон</span>
-              <input class="contacts__input" id="phone" type="tel" name="phone" minlength="11" maxlength="20" placeholder="Телефон" required oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
+              <input class="contacts__input" id="phone" type="tel" name="phone"  placeholder="Телефон" pattern="[0-9]{11}" required oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
             </label>
           </fieldset>
           <button id="contacts-submit" class="contacts__btn btn" type="submit">Отправить</button>
@@ -576,7 +576,9 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo"><svg class="footer__icon" width="119" height="23" role="img"><use xlink:href="img/sprite.svg#supergym"></use></svg></a>
+      <a class="footer__logo">
+        <span class="visually-hidden">Логотип "SUPERGYM".</span>
+        <svg class="footer__icon" width="119" height="23" role="img"><use xlink:href="img/sprite.svg#supergym"></use></svg></a>
       <nav class="footer__navigation">
         <ul class="footer__navigation-list">
           <li class="footer__navigation-item">

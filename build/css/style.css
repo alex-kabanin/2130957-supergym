@@ -4248,6 +4248,10 @@ button,
 
 .faq__btn {
   width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: none;
   outline: 1px solid rgba(16, 38, 84, 0.2);
   outline-offset: 0;
 }
@@ -4633,6 +4637,8 @@ button,
 .contacts__btn {
   width: 100%;
   padding: 21px;
+  font-size: 14px;
+  line-height: 16px;
   outline: 3px solid #ffffff;
   outline-offset: -3px;
 }
