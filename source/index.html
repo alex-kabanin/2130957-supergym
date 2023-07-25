@@ -540,12 +540,12 @@
           <h3 class="contacts__title">Бесплатное занятие</h3>
           <fieldset class="contacts__fields">
             <label class="contacts__label" data-required data-validate-type="text" data-message-base="Введите имя">
-              <span class="visually-hidden">Имя</span>
+              <span class="visually-hidden">Имя.</span>
               <input class="contacts__input" id="first-name" type="text" name="first-name" minlength="2" maxlength="20" placeholder="Имя" required oninput="this.value=this.value.replace(/[^а-яА-ЯЁё]/g, '');">
             </label>
             <label class="contacts__label" data-required data-validate-type="phone" data-message-base="Введите телефон">
-              <span class="visually-hidden">Телефон</span>
-              <input class="contacts__input" id="phone" type="tel" name="phone"  placeholder="Телефон" pattern="[0-9]{11}" required oninput="this.value = this.value.replace(/[^0-9\+]/g, '');">
+              <span class="visually-hidden">Телефон.</span>
+              <input class="contacts__input" id="phone" type="tel" name="phone"  placeholder="Телефон" pattern="[0-9]{11}" required >
             </label>
           </fieldset>
           <button id="contacts-submit" class="contacts__btn btn" type="submit">Отправить</button>
