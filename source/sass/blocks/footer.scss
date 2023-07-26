@@ -15,7 +15,7 @@
   }
 }
 
-.footer .container {
+.footer .footer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,7 +80,6 @@
   color: variables.$color-default-white;
 
   &:hover {
-
     &::after {
       content: "";
       position: absolute;

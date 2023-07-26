@@ -43,7 +43,7 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include mixins.vp-mobile{
+    @include mixins.vp-mobile {
       padding: 60px 16px;
     }
   }

@@ -9,8 +9,7 @@
   }
 }
 
-.staff .container {
-
+.staff .staff__container {
   @include mixins.vp-tablet {
     padding: 0 101px;
   }
@@ -42,7 +41,8 @@
   }
 }
 
-.staff__button-next, .staff__button-prev {
+.staff__button-next,
+.staff__button-prev {
   @include mixins.next-prev-buttons;
 }
 
@@ -77,4 +77,3 @@
   width: min-content;
   margin: 0 auto;
 }
-

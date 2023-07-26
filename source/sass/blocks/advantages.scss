@@ -14,11 +14,10 @@
   }
 }
 
-.advantages .container {
+.advantages .advantages__container {
   @media (min-width: 1366px) {
     padding: 0 163px;
   }
-
 }
 
 .advantages h2 {
@@ -86,7 +85,6 @@
   @include mixins.line-advantages;
 
   @include mixins.vp-tablet {
-
     &::after {
       height: 0;
     }
@@ -116,8 +114,7 @@
   font-weight: 700;
   line-height: 71px;
   color: transparent;
-  background-image: linear-gradient(to right bottom,#D10A42 0,#0041CA 87%);
-  -webkit-background-clip: text;
+  background-image: linear-gradient(to right bottom, #d10a42 0, #0041ca 87%);
   background-clip: text;
 
   @include mixins.vp-tablet {
@@ -152,7 +149,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: #2E35AC;
+  color: #2e35ac;
 
   @include mixins.vp-mobile {
     margin-bottom: 10px;
@@ -179,7 +176,7 @@
   padding: 58px 34px;
   text-align: center;
   color: variables.$color-default-white;
-  background-color: #1C3374;
+  background-color: #1c3374;
 
   @include mixins.vp-tablet {
     grid-row: 2/2;

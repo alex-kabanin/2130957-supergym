@@ -13,7 +13,7 @@
   }
 }
 
-.gym .container {
+.gym .gym__container {
   display: flex;
   flex-wrap: wrap;
   gap: 85px;
@@ -62,7 +62,7 @@
   @include mixins.vp-mobile {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
 }
 
@@ -89,10 +89,10 @@
     height: 167px;
     margin: -136px auto 0;
   }
+
   @include mixins.vp-mobile {
     margin: 0 auto;
   }
-
 }
 
 .gym__video {
@@ -134,7 +134,8 @@
     background-size: cover;
   }
 
-  &:hover::after, &:focus::after {
+  &:hover::after,
+  &:focus::after {
     background-image: url("../img/svg/play-button-hover.svg");
   }
 
@@ -167,9 +168,6 @@
   }
 }
 
-.gym__picture {
-
-}
 
 .gym__button-image {
   @include mixins.vp-mobile {

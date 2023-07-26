@@ -94,14 +94,15 @@
     border-left: 1px solid variables.$color-basic;
   }
 
-  &:not(:disabled):hover, &:not(:disabled):focus {
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
     border: 1px solid variables.$color-basic;
   }
 
   &:not(:disabled):active {
     background-color: variables.$color-basic;
 
-    &:after {
+    &::after {
       border-left: 1px solid variables.$color-default-white;
       border-bottom: 1px solid variables.$color-default-white;
     }
@@ -116,7 +117,7 @@
     width: 40px;
     height: 40px;
 
-    &:after {
+    &::after {
       top: 7px;
     }
   }

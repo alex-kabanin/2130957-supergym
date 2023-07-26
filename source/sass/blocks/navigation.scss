@@ -1,10 +1,6 @@
 @use "../mixins";
 @use "../variables";
 
-.navigation {
-
-}
-
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -49,7 +45,7 @@
   }
 }
 
-.navigation__icon {
+.navigation__logo {
   @include mixins.vp-tablet {
     width: 82px;
   }

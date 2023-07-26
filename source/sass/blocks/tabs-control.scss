@@ -45,13 +45,17 @@
     transition: all variables.$trans-default;
   }
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     outline: none;
     opacity: 1;
   }
 
-  &:hover::after, &:focus::after, &:active::after {
-    background-color: #D10A42;
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-color: #d10a42;
   }
 
   @include mixins.vp-tablet {
@@ -64,6 +68,6 @@
   opacity: 1;
 
   &::after {
-    background-color: #D10A42;
+    background-color: #d10a42;
   }
 }

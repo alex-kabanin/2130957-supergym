@@ -18,7 +18,8 @@
   border-radius: 50%;
   transition: all variables.$trans-default;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: variables.$color-default-white;
     background-color: variables.$color-additional;
   }

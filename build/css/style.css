@@ -2198,12 +2198,12 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .navigation__icon {
+  .navigation__logo {
     width: 82px;
   }
 }
 @media (max-width: 767px) {
-  .navigation__icon {
+  .navigation__logo {
     width: 69px;
   }
 }
@@ -2227,7 +2227,7 @@ button,
   }
 }
 
-.hero .container {
+.hero .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2368,7 +2368,7 @@ button,
   }
 }
 
-.footer .container {
+.footer .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2380,7 +2380,7 @@ button,
           justify-content: space-between;
 }
 @media (max-width: 767px) {
-  .footer .container {
+  .footer .footer__container {
     display: block;
   }
 }
@@ -2543,7 +2543,7 @@ button,
   }
 }
 
-.gym .container {
+.gym .gym__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2552,12 +2552,12 @@ button,
   gap: 85px;
 }
 @media (max-width: 1199px) {
-  .gym .container {
+  .gym .gym__container {
     gap: 50px;
   }
 }
 @media (max-width: 767px) {
-  .gym .container {
+  .gym .gym__container {
     padding: 0;
     gap: 40px;
   }
@@ -2970,11 +2970,29 @@ button,
 
 .tabs-content p {
   position: relative;
-  margin-bottom: 48px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 48px;
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
   color: #103AAE;
+  z-index: 0;
+}
+.tabs-content p::before {
+  position: absolute;
+  content: attr(data-price);
+  top: -15px;
+  left: 0;
+  font-size: 100px;
+  line-height: 100px;
+  color: rgba(232, 232, 232, 0.48);
+  -webkit-transform: translate(-9%, -29%);
+      -ms-transform: translate(-9%, -29%);
+          transform: translate(-9%, -29%);
+  z-index: -1;
+  word-break: normal;
 }
 .tabs-content p::after {
   content: "";
@@ -3248,12 +3266,12 @@ button,
 }
 
 @media (max-width: 1199px) {
-  .staff .container {
+  .staff .staff__container {
     padding: 0 101px;
   }
 }
 @media (max-width: 767px) {
-  .staff .container {
+  .staff .staff__container {
     padding: 0 47px;
   }
 }
@@ -3504,7 +3522,7 @@ button,
 }
 
 @media (min-width: 1366px) {
-  .advantages .container {
+  .advantages .advantages__container {
     padding: 0 163px;
   }
 }
@@ -4519,14 +4537,14 @@ button,
   }
 }
 
-.contacts .container {
+.contacts .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
 @media (max-width: 1199px) {
-  .contacts .container {
+  .contacts .contacts__container {
     display: block;
   }
 }

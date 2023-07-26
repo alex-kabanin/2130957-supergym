@@ -86,7 +86,7 @@
   }
 
   &:hover {
-    border-image: linear-gradient(148.82deg,#ED0233 .85%,#003EB7 100%) 1;
+    border-image: linear-gradient(149deg, #ed0233 1%, #003eb7 100%) 1;
 
     &::before {
       border: 7px solid transparent;
@@ -118,11 +118,26 @@
 
 .tabs-content p {
   position: relative;
-  margin-bottom: 48px;
+  width: max-content;
+  margin: 0 auto 48px;
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
   color: variables.$color-additional;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: attr(data-price);
+    top: -15px;
+    left: 0;
+    font-size: 100px;
+    line-height: 100px;
+    color: rgba(232, 232, 232, 0.48);
+    transform: translate(-9%, -29%);
+    z-index: -1;
+    word-break: normal;
+  }
 
   &::after {
     content: "";
@@ -140,7 +155,7 @@
 
     &::after {
       margin-left: 10px;
-      height:33px;
+      height: 33px;
       width: 24px;
     }
   }
@@ -154,7 +169,7 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 100px;
-  color: rgba(232,232,232,.48);
+  color: rgba(232, 232, 232, 0.48);
   overflow-wrap: normal;
   user-select: none;
 
@@ -173,4 +188,3 @@
   width: 206px;
   padding: 27px;
 }
-

@@ -22,7 +22,7 @@
   text-align: center;
   letter-spacing: variables.$letter-space;
 
-  @include  mixins.vp-tablet {
+  @include mixins.vp-tablet {
     margin-bottom: 50px;
     font-size: 42px;
     line-height: 42px;
@@ -57,7 +57,7 @@
   flex-direction: column;
   padding: 17px 28px 20px;
   border: 7px solid transparent;
-  border-image: linear-gradient(148.82deg,#ed0233 .85%,#003eb7 100%) 1;
+  border-image: linear-gradient(149deg, #ed0233 1%, #003eb7 100%) 1;
 
   &--large {
     display: grid;
@@ -80,7 +80,6 @@
   }
 
   @include mixins.vp-mobile {
-
     &--large {
       grid-template-columns: 1fr;
       grid-column: 1/2;
