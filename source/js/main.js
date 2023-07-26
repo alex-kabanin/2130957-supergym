@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form.js';
 import './modules/video/video.js';
 import './modules/tabs/tabs.js';
 import './modules/faq/faq.js';
+import './modules/smooth-scroll/smooth-scroll.js';
 
 // ---------------------------------
 
