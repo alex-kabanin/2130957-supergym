@@ -1,9 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix.js';
 import {initTrainersSlider} from './modules/swiper/swiper.js';
 import {Form} from './modules/form-validate/form.js';
-import './modules/video/video.js';
+import {initVideo} from './modules/video/video.js';
 import {initTabItem} from './modules/tabs/tabs.js';
-import './modules/faq/faq.js';
 import {initAnchorLink} from './modules/smooth-scroll/smooth-scroll.js';
 import {initTabs} from './vendor/init-tabs';
 import {initAccordions} from './vendor/init-accordion.js';
@@ -18,14 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  initTabs();
-  initTabItem();
-  initTrainersSlider();
+  initVideo();
   initAnchorLink();
-  initAccordions();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    initTabs();
+    initTabItem();
+    initTrainersSlider();
+    initAccordions();
     const form = new Form();
     window.form = form;
     form.init();
