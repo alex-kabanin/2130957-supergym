@@ -53,6 +53,10 @@
   list-style: none;
   cursor: pointer;
 
+  &::-webkit-details-marker {
+    display: none;
+  }
+
   @include mixins.vp-mobile {
     font-size: 18px;
     line-height: 22px;
