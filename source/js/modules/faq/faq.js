@@ -1,20 +1,8 @@
-const detailsDetails = document.querySelectorAll('[data-anwers-details]');
+const detailsDetails = document.querySelectorAll('[data-accordion="element"]');
 const answers = document.querySelectorAll('[data-anwers]');
 const faqBlock = document.querySelector('[data-faq-block]');
 const faqBtn = document.querySelectorAll('[data-faq-btn]');
 
-detailsDetails.forEach((detailsItem) => {
-  const answersSummary = detailsItem.querySelector('[data-answers-summary]');
-
-  answersSummary.addEventListener('click', () => {
-    const answersReply = detailsItem.querySelector('[data-answers-reply]');
-    answersReply.classList.add('animated');
-
-    setTimeout(() => {
-      answersReply.classList.remove('animated');
-    }, 100);
-  });
-});
 
 answers.forEach((tabList, index) => {
   const dataAttr = `faq-${index + 1}`;

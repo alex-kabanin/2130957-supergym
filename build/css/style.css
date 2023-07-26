@@ -1165,6 +1165,22 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+[data-accordion=element].is-active > [data-accordion=content] {
+  max-height: 100%;
+}
+
+[data-accordion=parent].no-transition [data-accordion=content] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-accordion=content] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
 @font-face {
   font-style: normal;
   font-weight: 300;
@@ -3859,31 +3875,31 @@ button,
   display: block;
 }
 
-.answers__item {
-  position: relative;
-}
-
-.answers p {
-  margin-top: 15px;
+.answers__item p {
   padding-right: 200px;
   font-size: 18px;
   line-height: 23px;
-  -webkit-transition: all ease;
-  transition: all ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
-  .answers p {
+  .answers__item p {
     padding-right: 118px;
   }
 }
 @media (max-width: 767px) {
-  .answers p {
+  .answers__item p {
     padding-right: 0;
   }
 }
 
-.answers details {
+.answers__item.is-active p {
+  margin-top: 15px;
+}
+
+.answers__item {
+  position: relative;
   max-height: 500px;
   margin-bottom: -1px;
   padding: 25px 0;
@@ -3891,7 +3907,7 @@ button,
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.answers summary {
+.answers__item button {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3899,19 +3915,22 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   min-height: 42px;
   font-size: 24px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   padding-right: 48px;
   font-weight: 600;
   line-height: 29px;
-  list-style: none;
+  color: #102654;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-}
-.answers summary::-webkit-details-marker {
-  display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media (max-width: 767px) {
-  .answers summary {
+  .answers__item button {
     font-size: 18px;
     line-height: 22px;
   }
@@ -3952,34 +3971,41 @@ button,
   background-color: #ffffff;
 }
 
-.answers details[open] .answers__sign {
+.answers__item.is-active .answers__sign {
   background-color: #102654;
 }
-.answers details[open] .answers__sign::after {
+.answers__item.is-active .answers__sign::after {
   background-color: #ffffff;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.answers details[open] .answers__sign::before {
+.answers__item.is-active .answers__sign::before {
   background-color: #ffffff;
   -webkit-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
 
-.answers summary:hover .answers__sign {
+.answers button:focus {
+  outline: none;
+}
+
+.answers button:hover .answers__sign,
+.answers button:focus .answers__sign {
   background-color: #102654;
 }
-.answers summary:hover .answers__sign::after, .answers summary:hover .answers__sign::before {
+.answers button:hover .answers__sign::after, .answers button:hover .answers__sign::before,
+.answers button:focus .answers__sign::after,
+.answers button:focus .answers__sign::before {
   background-color: #ffffff;
 }
 
-.answers details summary ~ .animated {
+.answers__item button ~ .animated {
   overflow: hidden;
 }
 
-.answers details[open] summary ~ .animated {
+.answers__item.is-active button ~ .animated {
   -webkit-animation: sweep 1.5s ease;
           animation: sweep 1.5s ease;
 }

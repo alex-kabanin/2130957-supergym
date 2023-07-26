@@ -12,16 +12,11 @@
   display: block;
 }
 
-.answers__item {
-  position: relative;
-}
-
-.answers p {
-  margin-top: 15px;
+.answers__item p {
   padding-right: 200px;
   font-size: 18px;
   line-height: 23px;
-  transition: all variables.$tf-default;
+  transition: all variables.$trans-default;
   overflow: hidden;
 
   @include mixins.vp-tablet {
@@ -33,7 +28,12 @@
   }
 }
 
-.answers details {
+.answers__item.is-active p {
+  margin-top: 15px;
+}
+
+.answers__item {
+  position: relative;
   max-height: 500px;
   margin-bottom: -1px;
   padding: 25px 0;
@@ -41,21 +41,22 @@
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
-.answers summary {
+.answers__item button {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
   min-height: 42px;
   font-size: 24px;
+  font-family: variables.$ff-secondary;
   padding-right: 48px;
   font-weight: 600;
   line-height: 29px;
-  list-style: none;
+  color: variables.$color-basic;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-
-  &::-webkit-details-marker {
-    display: none;
-  }
+  transition: all variables.$trans-default;
 
   @include mixins.vp-mobile {
     font-size: 18px;
@@ -100,7 +101,7 @@
   }
 }
 
-.answers details[open] .answers__sign {
+.answers__item.is-active .answers__sign {
   background-color: variables.$color-basic;
 
   &::after {
@@ -114,7 +115,13 @@
   }
 }
 
-.answers summary:hover .answers__sign {
+.answers button:focus {
+  outline: none;
+}
+
+.answers button:hover .answers__sign,
+.answers button:focus .answers__sign,
+{
   background-color: variables.$color-basic;
 
   &::after,
@@ -123,11 +130,11 @@
   }
 }
 
-.answers details summary ~ .animated {
+.answers__item button ~ .animated {
   overflow: hidden;
 }
 
-.answers details[open] summary ~ .animated {
+.answers__item.is-active button ~ .animated {
   animation: sweep 1.5s ease;
 }
 

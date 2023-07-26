@@ -6,6 +6,7 @@ import {initTabItem} from './modules/tabs/tabs.js';
 import './modules/faq/faq.js';
 import {initAnchorLink} from './modules/smooth-scroll/smooth-scroll.js';
 import {initTabs} from './vendor/init-tabs';
+import {initAccordions} from './vendor/init-accordion.js';
 
 // ---------------------------------
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabItem();
   initTrainersSlider();
   initAnchorLink();
+  initAccordions();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
