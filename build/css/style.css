@@ -2632,6 +2632,7 @@ button,
   display: block;
   width: 364px;
   height: 228px;
+  background-color: #000000;
 }
 @media (max-width: 1199px) {
   .gym__video-wrapper {

@@ -91,6 +91,7 @@
   display: block;
   width: 364px;
   height: 228px;
+  background-color: variables.$color-default-black;
 
   @include mixins.vp-tablet {
     left: calc(50% - 133px);

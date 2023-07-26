@@ -80,23 +80,23 @@
         </a>
       </div>
     </section>
-    <section class="subscription" id="subscription">
+    <section class="subscription" id="subscription" data-tabs="parent" data-delay="150">
       <div class="container">
         <h2>Абонементы</h2>
-        <ul class="subscription__tabs-control tabs-control" data-tabs-control>
+        <ul class="subscription__tabs-control tabs-control" data-tabs="controls">
           <li class="tabs-control__item">
-            <button type="button" class="tabs-control__button is-active" data-tabs-control-btn id="tab-1">1 месяц</button>
+            <button type="button" class="tabs-control__button is-active" data-tabs="control" id="tab-1">1 месяц</button>
           </li>
           <li class="tabs-control__item">
-            <button type="button" class="tabs-control__button" id="tab-2" data-tabs-control-btn>6 месяцев</button>
+            <button type="button" class="tabs-control__button" id="tab-2" data-tabs="control">6 месяцев</button>
           </li>
           <li class="tabs-control__item">
-            <button type="button" class="tabs-control__button" id="tab-3" data-tabs-control-btn>12 месяцев</button>
+            <button type="button" class="tabs-control__button" id="tab-3" data-tabs="control">12 месяцев</button>
           </li>
         </ul>
-        <ul class="subscription__tabs-content tabs-content">
+        <ul class="subscription__tabs-content tabs-content" data-tabs="content">
           <li class="tabs-content__wrapper">
-            <ul class="tabs-content__list is-active" data-tabs-content-list>
+            <ul class="tabs-content__list is-active" data-tabs="element">
               <li class="tabs-content__item" data-tabs-content-item>
                 <h3>С тренером</h3>
                 <h4>12 занятий</h4>
@@ -124,7 +124,7 @@
             </ul>
           </li>
           <li class="tabs-content__wrapper">
-            <ul class="tabs-content__list" data-tabs-content-list>
+            <ul class="tabs-content__list" data-tabs="element">
               <li class="tabs-content__item" data-tabs-content-item>
                 <h3>С тренером</h3>
                 <h4>72 занятий</h4>
@@ -152,7 +152,7 @@
             </ul>
           </li>
           <li class="tabs-content__wrapper">
-            <ul class="tabs-content__list" data-tabs-content-list>
+            <ul class="tabs-content__list" data-tabs="element">
               <li class="tabs-content__item" data-tabs-content-item>
                 <h3>С тренером</h3>
                 <h4>144 занятий</h4>
@@ -215,7 +215,7 @@
       <div class="staff__container container">
         <h2>Тренеры</h2>
         <div class="staff__button-container">
-          <div class="staff__swiper swiper">
+          <div class="staff__swiper swiper" data-staff__swiper>
             <ul class="trainer swiper-wrapper">
               <li class="trainer__item swiper-slide" tabindex="0">
                 <picture>
@@ -526,7 +526,7 @@
       <div class="container">
         <h2>Отзывы</h2>
         <div class="reviews__button-container">
-          <div class="reviews__swiper swiper">
+          <div class="reviews__swiper swiper" data-reviews__swiper>
             <ul class="reviews__list swiper-wrapper">
               <li class="reviews__item swiper-slide">
                 <picture class="reviews__picture">

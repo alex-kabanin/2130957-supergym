@@ -11,10 +11,14 @@ function smoothScrollToAnchor(anchorId) {
 
 const anchorLink = document.querySelector('[data-hero-btn]');
 
-anchorLink.addEventListener('click', (event) => {
-  event.preventDefault();
-  const targetId = anchorLink.getAttribute('href');
-  smoothScrollToAnchor(targetId);
-});
+const initAnchorLink = () => {
+  if (anchorLink) {
+    anchorLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetId = anchorLink.getAttribute('href');
+      smoothScrollToAnchor(targetId);
+    });
+  }
+};
 
-export {anchorLink};
+export {initAnchorLink};
