@@ -2914,9 +2914,9 @@ button,
   .tabs-control__button {
     font-size: 16px;
   }
-}
-.tabs-control__button::after {
-  right: -8px;
+  .tabs-control__button::after {
+    right: -8px;
+  }
 }
 
 .tabs-control__button.is-active {
@@ -4785,7 +4785,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 700;
   line-height: 65px;
-  letter-spacing: 0.034em;
+  letter-spacing: 0.03em;
 }
 @media (max-width: 1199px) {
   .contacts h3 {
