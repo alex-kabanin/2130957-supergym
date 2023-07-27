@@ -2201,7 +2201,7 @@ button,
 @media (max-width: 1199px) {
   .navigation__link {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 24px;
     font-weight: 700;
   }
 }
@@ -2360,7 +2360,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__btn {
-    width: 100%;
+    width: 97%;
   }
 }
 @media (max-width: 767px) {
@@ -2376,7 +2376,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer {
-    padding: 45px 0;
+    padding: 40px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2416,6 +2416,7 @@ button,
   .footer__logo {
     position: absolute;
     top: 54px;
+    margin-right: 10px;
   }
 }
 
@@ -2445,7 +2446,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__navigation-list {
-    gap: 10px;
+    gap: 12px;
   }
 }
 @media (max-width: 767px) {
@@ -2589,6 +2590,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gym__content {
+    max-width: 555px;
     margin: 0 auto;
     text-align: center;
   }
@@ -2779,7 +2781,7 @@ button,
 }
 @media (max-width: 1199px) {
   .subscription {
-    padding: 100px 0;
+    padding: 101px 0;
   }
 }
 @media (max-width: 767px) {
@@ -2796,17 +2798,18 @@ button,
 }
 
 .subscription h2 {
+  margin-bottom: 4px;
   font-size: 54px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin-bottom: 4px;
 }
 @media (max-width: 1199px) {
   .subscription h2 {
+    margin-left: -14px;
     font-size: 42px;
-    line-height: 50px;
+    line-height: 53px;
   }
 }
 @media (max-width: 767px) {
@@ -2831,6 +2834,7 @@ button,
 }
 @media (max-width: 1199px) {
   .tabs-control {
+    margin: 0 auto 46px;
     gap: 54px;
   }
 }
@@ -2929,8 +2933,9 @@ button,
 }
 @media (max-width: 1199px) {
   .tabs-content::after {
-    bottom: -192px;
-    right: -74px;
+    bottom: -188px;
+    right: -48px;
+    background-size: 91%;
   }
 }
 @media (max-width: 767px) {
@@ -2958,6 +2963,7 @@ button,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 42px;
     -ms-grid-columns: 442px;
     grid-template-columns: 442px;
   }
@@ -3149,7 +3155,7 @@ button,
     -ms-grid-columns: 117px 56px;
     grid-template-columns: 117px 56px;
     padding: 43px 45px;
-    gap: 10px 29px;
+    gap: 5px 29px;
   }
 }
 @media (max-width: 767px) {
@@ -3193,7 +3199,8 @@ button,
 }
 @media (max-width: 1199px) {
   .event h2 {
-    margin-left: 0;
+    margin-left: 9px;
+    margin-top: 3px;
     font-size: 48px;
     line-height: 50px;
   }
@@ -3210,7 +3217,7 @@ button,
 }
 @media (max-width: 1199px) {
   .event h3 {
-    margin-bottom: 16px;
+    margin-bottom: 26px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -3224,7 +3231,7 @@ button,
 }
 @media (max-width: 1199px) {
   .event__btn {
-    padding: 16px;
+    padding: 13px;
   }
 }
 
@@ -3243,7 +3250,8 @@ button,
 }
 @media (max-width: 1199px) {
   .event__list {
-    gap: 10px;
+    gap: 7px;
+    margin-top: 5px;
   }
 }
 
@@ -3304,12 +3312,14 @@ button,
 @media (max-width: 1199px) {
   .event small {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 13px;
+    margin-top: -7px;
+    margin-left: -3px;
   }
 }
 
 .staff {
-  padding-bottom: 105px;
+  padding-bottom: 118px;
 }
 @media (max-width: 1199px) {
   .staff {
@@ -3527,7 +3537,6 @@ button,
 
 .trainer li {
   position: relative;
-  margin-bottom: 13px;
 }
 .trainer li::before {
   content: "";
@@ -3577,7 +3586,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages {
-    padding: 100px 0;
+    padding: 91px 0 93px;
   }
 }
 @media (max-width: 767px) {
@@ -3604,7 +3613,8 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages h2 {
-    margin-bottom: 61px;
+    margin-bottom: 42px;
+    margin-left: -25px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -3637,7 +3647,7 @@ button,
     -ms-grid-rows: min-content min-content min-content;
     grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content min-content;
-    gap: 50px 52px;
+    gap: 32px;
   }
 }
 @media (max-width: 767px) {
@@ -3793,7 +3803,6 @@ button,
   .advantages h3 {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 5px;
   }
 }
 
@@ -3814,12 +3823,14 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item--third {
+    width: 442px;
+    margin: 11px auto 10px;
     -ms-grid-row: 2;
     grid-row: 2/2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
-    padding: 45px 34px;
+    padding: 30px 34px 40px;
   }
 }
 @media (max-width: 767px) {
@@ -3836,7 +3847,7 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages__item--third h3 span {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-size: 22px;
   }
 }
@@ -3848,7 +3859,7 @@ button,
 
 .advantages__item--third h3 {
   font-size: 74px;
-  line-height: 82px;
+  line-height: 77px;
   color: #ffffff;
 }
 @media (max-width: 1199px) {
@@ -3901,6 +3912,11 @@ button,
   margin-top: 11px;
   margin-bottom: -1px;
 }
+@media (max-width: 1199px) {
+  .answers__item.is-active p {
+    margin-top: 7px;
+  }
+}
 
 .answers__item {
   position: relative;
@@ -3926,6 +3942,7 @@ button,
   padding: 0 48px 0 0;
   font-weight: 600;
   line-height: 29px;
+  text-align: left;
   color: #102654;
   background-color: transparent;
   border: none;
@@ -3942,7 +3959,7 @@ button,
 
 .answers__sign {
   position: absolute;
-  top: 0;
+  top: calc(50% - 21px);
   right: 0;
   width: 42px;
   height: 42px;
@@ -4036,7 +4053,7 @@ button,
 }
 @media (max-width: 1199px) {
   .offers {
-    padding: 100px 0;
+    padding: 96px 0 100px;
   }
 }
 @media (max-width: 767px) {
@@ -4056,7 +4073,8 @@ button,
 }
 @media (max-width: 1199px) {
   .offers h2 {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
+    margin-left: -10px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -4379,7 +4397,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews {
-    padding: 100px 0;
+    padding: 96px 0 99px;
   }
 }
 @media (max-width: 767px) {
@@ -4513,7 +4531,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews h2 {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     font-size: 42px;
     line-height: 42px;
   }
@@ -4543,7 +4561,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__item {
-    padding: 62px 65px;
+    padding: 60px 65px 56px;
   }
 }
 @media (max-width: 767px) {
@@ -4644,7 +4662,7 @@ button,
 @media (max-width: 1199px) {
   .contacts form {
     width: 100%;
-    padding: 70px 163px 70px 133px;
+    padding: 62px 163px 68px 133px;
   }
 }
 @media (max-width: 767px) {
@@ -4660,7 +4678,7 @@ button,
 @media (max-width: 1199px) {
   .contacts__us {
     width: 100%;
-    padding: 70px 133px 70px 133px;
+    padding: 62px 133px 65px 133px;
   }
 }
 @media (max-width: 767px) {
@@ -4680,7 +4698,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts h3 {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -4707,6 +4725,11 @@ button,
   margin: 0 0 27px;
   padding: 0;
   border: none;
+}
+@media (max-width: 1199px) {
+  .contacts fieldset {
+    gap: 60px;
+  }
 }
 @media (max-width: 767px) {
   .contacts fieldset {
@@ -4807,10 +4830,10 @@ button,
   .contacts__wrapper {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 30px 77px;
+    gap: 19px 97px;
   }
   .contacts__wrapper::before {
-    left: calc(50% - 10px);
+    left: calc(55% - 10px);
   }
 }
 @media (max-width: 767px) {
@@ -4834,6 +4857,7 @@ button,
   .contacts p {
     font-size: 18px;
     line-height: 27px;
+    white-space: nowrap;
   }
 }
 .contacts p a {

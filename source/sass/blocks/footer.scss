@@ -7,7 +7,7 @@
   background-color: variables.$color-footer;
 
   @include mixins.vp-tablet {
-    padding: 45px 0;
+    padding: 40px 0;
   }
 
   @include mixins.vp-mobile {
@@ -34,6 +34,7 @@
   @include mixins.vp-mobile {
     position: absolute;
     top: 54px;
+    margin-right: 10px;
   }
 }
 
@@ -58,7 +59,7 @@
   list-style: none;
 
   @include mixins.vp-tablet {
-    gap: 10px;
+    gap: 12px;
   }
 
   @include mixins.vp-mobile {

@@ -38,7 +38,7 @@
   @include mixins.vp-tablet {
     grid-template-columns: 117px 56px;
     padding: 43px 45px;
-    gap: 10px 29px;
+    gap: 5px 29px;
   }
 
   @include mixins.vp-mobile {
@@ -75,7 +75,8 @@
   letter-spacing: variables.$letter-space;
 
   @include mixins.vp-tablet {
-    margin-left: 0;
+    margin-left: 9px;
+    margin-top: 3px;
     font-size: 48px;
     line-height: 50px;
   }
@@ -89,7 +90,7 @@
   line-height: 20px;
 
   @include mixins.vp-tablet {
-    margin-bottom: 16px;
+    margin-bottom: 26px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -100,7 +101,7 @@
   padding: 27px;
 
   @include mixins.vp-tablet {
-    padding: 16px;
+    padding: 13px;
   }
 }
 
@@ -113,7 +114,8 @@
   gap: 21px;
 
   @include mixins.vp-tablet {
-    gap: 10px;
+    gap: 7px;
+    margin-top: 5px;
   }
 }
 
@@ -167,6 +169,8 @@
 
   @include mixins.vp-tablet {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 13px;
+    margin-top: -7px;
+    margin-left: -3px;
   }
 }

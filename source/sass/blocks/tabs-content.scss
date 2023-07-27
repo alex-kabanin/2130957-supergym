@@ -32,8 +32,9 @@
 
   @include mixins.vp-tablet {
     &::after {
-      bottom: -192px;
-      right: -74px;
+      bottom: -188px;
+      right: -48px;
+      background-size: 91%;
     }
   }
 
@@ -58,6 +59,7 @@
 
   @include mixins.vp-tablet {
     justify-content: center;
+    gap: 42px;
     grid-template-columns: 442px;
   }
 

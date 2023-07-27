@@ -29,7 +29,7 @@
 
   @include mixins.vp-tablet {
     width: 100%;
-    padding: 70px 163px 70px 133px;
+    padding: 62px 163px 68px 133px;
   }
 
   @include mixins.vp-mobile {
@@ -43,7 +43,7 @@
 
   @include mixins.vp-tablet {
     width: 100%;
-    padding: 70px 133px 70px 133px;
+    padding: 62px 133px 65px 133px;
   }
 
   @include mixins.vp-mobile {
@@ -61,7 +61,7 @@
   letter-spacing: 0.034em;
 
   @include mixins.vp-tablet {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
     font-size: 42px;
     line-height: 50px;
   }
@@ -85,6 +85,10 @@
   margin: 0 0 27px;
   padding: 0;
   border: none;
+
+  @include mixins.vp-tablet {
+    gap: 60px;
+  }
 
   @include mixins.vp-mobile {
     grid-template-columns: 1fr;
@@ -164,10 +168,10 @@
 
   @include mixins.vp-tablet {
     grid-template-columns: 1fr 1fr;
-    gap: 30px 77px;
+    gap: 19px 97px;
 
     &::before {
-      left: calc(50% - 10px);
+      left: calc(55% - 10px);
     }
   }
 
@@ -190,6 +194,7 @@
   @include mixins.vp-tablet {
     font-size: 18px;
     line-height: 27px;
+    white-space: nowrap;
   }
 
   a {

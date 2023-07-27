@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .staff {
-  padding-bottom: 105px;
+  padding-bottom: 118px;
 
   @include mixins.vp-tablet {
     padding-bottom: 100px;

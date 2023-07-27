@@ -8,7 +8,7 @@
 
 
   @include mixins.vp-tablet {
-    padding: 100px 0;
+    padding: 101px 0;
   }
 
   @include mixins.vp-mobile {
@@ -25,16 +25,17 @@
 }
 
 .subscription h2 {
+  margin-bottom: 4px;
   font-size: 54px;
   font-family: variables.$ff-primary;
   font-weight: 600;
   line-height: 65px;
   letter-spacing: variables.$letter-space;
-  margin-bottom: 4px;
 
   @include mixins.vp-tablet {
+    margin-left: -14px;
     font-size: 42px;
-    line-height: 50px;
+    line-height: 53px;
   }
 
   @include mixins.vp-mobile {

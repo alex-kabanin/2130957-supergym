@@ -31,6 +31,10 @@
 .answers__item.is-active p {
   margin-top: 11px;
   margin-bottom: -1px;
+
+  @include mixins.vp-tablet {
+    margin-top: 7px;
+  }
 }
 
 .answers__item {
@@ -53,6 +57,7 @@
   padding: 0 48px 0 0;
   font-weight: 600;
   line-height: 29px;
+  text-align: left;
   color: variables.$color-basic;
   background-color: transparent;
   border: none;
@@ -67,7 +72,7 @@
 
 .answers__sign {
   position: absolute;
-  top: 0;
+  top: calc(50% - 21px);
   right: 0;
   width: 42px;
   height: 42px;
