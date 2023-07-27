@@ -23,7 +23,8 @@
 }
 
 .hero p {
-  margin: 303px 17px 0 19px;
+  margin: 306px 18px 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: right;
@@ -39,7 +40,7 @@
 }
 
 .hero__content {
-  margin-top: 118px;
+  margin-top: 121px;
   margin-right: 64px;
   max-width: 247px;
 
@@ -58,7 +59,7 @@
 
 .hero h5 {
   margin-bottom: 25px;
-  margin-left: 75px;
+  margin-left: 63px;
   font-size: 48px;
   font-family: variables.$ff-primary;
   line-height: 37px;

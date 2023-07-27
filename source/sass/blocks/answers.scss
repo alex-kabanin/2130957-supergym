@@ -15,7 +15,7 @@
 .answers__item p {
   padding-right: 200px;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 25px;
   transition: all variables.$trans-default;
   overflow: hidden;
 
@@ -29,14 +29,15 @@
 }
 
 .answers__item.is-active p {
-  margin-top: 15px;
+  margin-top: 11px;
+  margin-bottom: -1px;
 }
 
 .answers__item {
   position: relative;
   max-height: 500px;
   margin-bottom: -1px;
-  padding: 25px 0;
+  padding: 25px 0 24px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
@@ -49,7 +50,7 @@
   min-height: 42px;
   font-size: 24px;
   font-family: variables.$ff-secondary;
-  padding-right: 48px;
+  padding: 0 48px 0 0;
   font-weight: 600;
   line-height: 29px;
   color: variables.$color-basic;

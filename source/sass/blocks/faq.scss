@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .faq {
-  padding: 111px 0 118px;
+  padding: 111px 0 121px;
   background-color: variables.$color-additional-background;
 
   @include mixins.vp-tablet {
@@ -31,7 +31,7 @@
 .faq__block {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 11px;
+  gap: 10px;
   align-content: flex-start;
   margin: 0;
   padding: 0;
@@ -76,7 +76,7 @@
   line-height: 18px;
   text-transform: none;
   outline: 1px solid rgba(16, 38, 84, 0.2);
-  outline-offset: 0;
+  outline-offset: -1px;
 
   @include mixins.vp-mobile {
     padding: 14px;
