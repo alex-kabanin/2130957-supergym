@@ -46,4 +46,3 @@ const initTrainersSlider = () => {
 };
 
 export {initTrainersSlider};
-

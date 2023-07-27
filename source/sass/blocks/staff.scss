@@ -7,6 +7,10 @@
   @include mixins.vp-tablet {
     padding-bottom: 100px;
   }
+
+  @include mixins.vp-mobile {
+    padding-bottom: 70px;
+  }
 }
 
 .staff .staff__container {
@@ -35,7 +39,8 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 50px;
+    margin-left: -5px;
+    margin-bottom: 42px;
     font-size: 32px;
     line-height: 38px;
   }

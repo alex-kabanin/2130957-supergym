@@ -16,6 +16,7 @@
   }
 
   @include mixins.vp-mobile {
+    margin: 0 auto 34px;
     width: 100%;
     justify-content: space-between;
     gap: 10px;
@@ -62,6 +63,14 @@
   @include mixins.vp-tablet {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @include mixins.vp-mobile {
+    font-size: 16px;
+
+    &::after {
+      right: -8px;
+    }
   }
 }
 

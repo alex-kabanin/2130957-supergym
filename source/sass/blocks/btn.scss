@@ -16,6 +16,7 @@
   cursor: pointer;
   outline: 4px solid variables.$color-default-white;
   outline-offset: -2px;
+  letter-spacing: variables.$letter-space;
   transition: all variables.$trans-default;
 
   &:hover,

@@ -9,7 +9,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 70px 0;
+    padding: 66px 0 70px;
   }
 }
 
@@ -81,7 +81,10 @@
   }
 
   @include mixins.vp-mobile {
+    padding: 28px 28px 31px;
+
     &--large {
+      padding: 0;
       grid-template-columns: 1fr;
       grid-column: 1/2;
     }
@@ -93,10 +96,18 @@
   font-size: 26px;
   font-weight: 700;
   line-height: 39px;
+
+  @include mixins.vp-mobile {
+    margin-bottom: 8px;
+  }
 }
 
 .offers p {
   font-weight: 400;
+
+  @include mixins.vp-mobile {
+    line-height: 19px;
+  }
 }
 
 .offers a {
@@ -185,7 +196,7 @@
   line-height: 23px;
 
   @include mixins.vp-mobile {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 }
 

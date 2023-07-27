@@ -39,7 +39,7 @@
   transition: all variables.$trans-default;
 
   @include mixins.vp-mobile {
-    padding: 48px 27px 48px 40px;
+    padding: 45px 25px 48px 25px;
     top: 177px;
   }
 }
@@ -95,4 +95,8 @@
     width: 226px;
     height: 274px;
   }
+}
+
+.trainer__item li {
+  margin-bottom: 13px;
 }

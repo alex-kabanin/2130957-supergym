@@ -9,7 +9,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 70px 0;
+    padding: 69px 0 64px;
   }
 }
 
@@ -37,7 +37,7 @@
 
   @include mixins.vp-tablet {
     grid-template-columns: 117px 56px;
-    padding: 43px 45px;
+    padding: 43px 44px 51px;
     gap: 5px 29px;
   }
 
@@ -116,6 +116,10 @@
   @include mixins.vp-tablet {
     gap: 7px;
     margin-top: 5px;
+  }
+
+  @include mixins.vp-mobile {
+    margin-top: 7px;
   }
 }
 

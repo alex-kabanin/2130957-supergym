@@ -10,7 +10,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 70px 0;
+    padding: 64px 0;
   }
 }
 
@@ -38,7 +38,8 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 60px;
+    margin-bottom: 43px;
+    margin-left: -17px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -62,7 +63,7 @@
   @include mixins.vp-mobile {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 33px;
   }
 }
 
@@ -157,6 +158,10 @@
     font-size: 58px;
     line-height: 58px;
   }
+
+  @include mixins.vp-mobile {
+    margin-bottom: -4px;
+  }
 }
 
 .advantages h3 {
@@ -191,7 +196,9 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 50px 34px;
+    width: calc(100% + 30px);
+    margin: 11px -15px 10px;
+    padding: 42px 34px 44px;
   }
 }
 
@@ -207,7 +214,7 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 25px;
+    margin-bottom: 8px;
   }
 }
 
@@ -222,7 +229,7 @@
   }
 
   @include mixins.vp-mobile {
-    display: inline;
+    line-height: 64px;
   }
 }
 

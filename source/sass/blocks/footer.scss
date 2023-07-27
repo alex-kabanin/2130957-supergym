@@ -3,7 +3,7 @@
 
 .footer {
   position: relative;
-  padding: 38px 0;
+  padding: 39px 0;
   background-color: variables.$color-footer;
 
   @include mixins.vp-tablet {
@@ -11,7 +11,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 50px 0;
+    padding: 42px 0 52px;
   }
 }
 
@@ -26,15 +26,20 @@
 }
 
 .footer__logo {
-  margin-right: 7px;
-  padding-top: 9px;
+  margin-right: 243px;
+  padding-top: 13px;
   display: flex;
   align-items: end;
 
+  @include mixins.vp-tablet {
+    margin-right: 40px;
+    padding-top: 7px;
+  }
+
   @include mixins.vp-mobile {
-    position: absolute;
-    top: 54px;
-    margin-right: 10px;
+    align-items: center;
+    padding-top: 0;
+    height: 32px;
   }
 }
 
@@ -65,7 +70,7 @@
   @include mixins.vp-mobile {
     display: block;
     column-count: 2;
-    gap: 10px;
+    gap: 29px;
     margin-bottom: 18px;
   }
 }
@@ -103,16 +108,23 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
     justify-content: flex-start;
     font-size: 16px;
     line-height: 16px;
     padding: 0;
+
+    &:hover {
+      &::after {
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
 
-.footer__navigation-item:first-child {
+.footer__navigation-item {
   @include mixins.vp-mobile {
-    margin-top: 48px;
+    margin-bottom: 10px;
   }
 }

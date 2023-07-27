@@ -33,7 +33,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 70px 15px;
+    padding: 63px 15px 67px;
   }
 }
 
@@ -47,7 +47,7 @@
   }
 
   @include mixins.vp-mobile {
-    padding: 70px 15px;
+    padding: 64px 15px 62px;
   }
 }
 
@@ -58,7 +58,7 @@
   font-family: variables.$ff-primary;
   font-weight: 700;
   line-height: 65px;
-  letter-spacing: 0.034em;
+  letter-spacing: variables.$letter-space;
 
   @include mixins.vp-tablet {
     margin-bottom: 28px;
@@ -67,7 +67,8 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 28px;
+    margin-left: 0;
+    margin-bottom: 30px;
     font-size: 32px;
     line-height: 38px;
   }
@@ -91,6 +92,8 @@
   }
 
   @include mixins.vp-mobile {
+    margin-bottom: 38px;
+    gap: 28px;
     grid-template-columns: 1fr;
   }
 }
@@ -177,7 +180,7 @@
 
   @include mixins.vp-mobile {
     grid-template-columns: 1fr;
-    gap: 19px;
+    gap: 21px;
     margin-top: 8px;
 
     &::before {

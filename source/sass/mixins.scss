@@ -114,11 +114,14 @@
   }
 
   @include vp-mobile {
-    width: 40px;
-    height: 40px;
+    top: calc(56% - 32px);
+    width: 33px;
+    height: 33px;
 
     &::after {
-      top: 7px;
+      top: 9px;
+      width: 13.44px;
+      height: 13.44px;
     }
   }
 }
@@ -135,7 +138,7 @@
     right: -42px;
 
     &::after {
-      left: 1px;
+      left: 7px;
     }
   }
 }
@@ -152,7 +155,7 @@
     left: -42px;
 
     &::after {
-      right: 1px;
+      right: 7px;
     }
   }
 }

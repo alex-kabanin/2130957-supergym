@@ -94,6 +94,10 @@
       border: 7px solid transparent;
     }
   }
+
+  @include mixins.vp-mobile {
+    padding: 43px 20px 48px;
+  }
 }
 
 .tabs-content h3 {
@@ -103,7 +107,7 @@
   line-height: 30px;
 
   @include mixins.vp-mobile {
-    margin-bottom: 19px;
+    margin-bottom: 8px;
     font-size: 22px;
     line-height: 24px;
   }
@@ -114,7 +118,7 @@
   font-weight: 400;
 
   @include mixins.vp-mobile {
-    margin-bottom: 81px;
+    margin-bottom: 61px;
   }
 }
 
@@ -152,13 +156,19 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     font-size: 48px;
 
     &::after {
       margin-left: 10px;
       height: 33px;
       width: 24px;
+    }
+
+    &::before {
+      top: -6px;
+      font-size: 80px;
+      line-height: 80px;
     }
   }
 }

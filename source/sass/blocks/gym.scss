@@ -177,6 +177,10 @@
   @include mixins.vp-tablet {
     margin-bottom: 0;
   }
+
+  @include mixins.vp-mobile {
+    padding-right: 27px;
+  }
 }
 
 .gym picture {

@@ -24,7 +24,7 @@
   }
 
   @include mixins.vp-mobile {
-    gap: 30px;
+    gap: 28px;
   }
 }
 
@@ -79,6 +79,8 @@
   outline-offset: -1px;
 
   @include mixins.vp-mobile {
+    font-size: 16px;
+    line-height: 16px;
     padding: 14px;
   }
 }
