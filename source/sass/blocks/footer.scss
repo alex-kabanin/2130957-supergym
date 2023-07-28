@@ -71,7 +71,7 @@
     display: block;
     column-count: 2;
     gap: 29px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 }
 
@@ -108,7 +108,7 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     justify-content: flex-start;
     font-size: 16px;
     line-height: 16px;
@@ -125,6 +125,6 @@
 
 .footer__navigation-item {
   @include mixins.vp-mobile {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
   }
 }

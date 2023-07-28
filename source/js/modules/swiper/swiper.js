@@ -23,6 +23,11 @@ const initTrainersSlider = () => {
             spaceBetween: 30,
           },
           1200: {
+            width: 840,
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1352: {
             slidesPerView: 4,
             spaceBetween: 40,
           },

@@ -51,8 +51,7 @@
   }
 
   @include mixins.vp-mobile {
-    margin-top: 23px;
-    margin-right: 0;
+    margin: 23px 0 0 auto;
     max-width: 100%;
   }
 }
@@ -121,10 +120,11 @@
 .hero__btn {
   width: 93%;
   margin-left: auto;
-  padding: 24px;
+  padding: 23px 28px 20px 24px;
 
   @include mixins.vp-tablet {
     width: 97%;
+    padding: 23px 28px 22px 24px;
   }
 
   @include mixins.vp-mobile {

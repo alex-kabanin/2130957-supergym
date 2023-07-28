@@ -2,7 +2,7 @@
 @use "../mixins";
 
 .staff {
-  padding-bottom: 118px;
+  padding-bottom: 106px;
 
   @include mixins.vp-tablet {
     padding-bottom: 100px;
@@ -67,6 +67,10 @@
 
 .staff__swiper {
   width: 1160px;
+
+  @media (max-width: 1351px) {
+    width: 840px;
+  }
 
   @include mixins.vp-tablet {
     width: 566px;

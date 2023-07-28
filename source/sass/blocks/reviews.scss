@@ -82,7 +82,7 @@
   color: variables.$color-default-white;
 
   @include mixins.vp-tablet {
-    padding: 60px 65px 56px;
+    padding: 60px 65px 54px;
   }
 
   @include mixins.vp-mobile {

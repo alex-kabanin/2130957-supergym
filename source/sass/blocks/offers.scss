@@ -30,6 +30,7 @@
   }
 
   @include mixins.vp-mobile {
+    margin-left: 0;
     font-size: 32px;
     line-height: 32px;
   }
