@@ -2289,7 +2289,7 @@ button,
 @media (max-width: 767px) {
   .hero__content {
     margin: 23px 0 0 auto;
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 
@@ -3534,21 +3534,21 @@ button,
 }
 
 .staff__swiper {
-  width: 1160px;
+  max-width: 1160px;
 }
 @media (max-width: 1351px) {
   .staff__swiper {
-    width: 840px;
+    max-width: 840px;
   }
 }
 @media (max-width: 1199px) {
   .staff__swiper {
-    width: 566px;
+    max-width: 566px;
   }
 }
 @media (max-width: 767px) {
   .staff__swiper {
-    width: 226px;
+    max-width: 226px;
   }
 }
 

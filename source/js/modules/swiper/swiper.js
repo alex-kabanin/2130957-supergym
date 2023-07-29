@@ -8,7 +8,10 @@ const initTrainersSlider = () => {
       new Swiper('.staff__swiper', {
         loop: true,
         slidesPerView: 1,
-        spaceBetween: 40,
+        direction: 'horizontal',
+        loopFillGroupWithBlank: true,
+        watchSlidesProgress: true,
+        observer: true,
         navigation: {
           nextEl: '.staff__button-next',
           prevEl: '.staff__button-prev',
@@ -23,7 +26,6 @@ const initTrainersSlider = () => {
             spaceBetween: 30,
           },
           1200: {
-            width: 840,
             slidesPerView: 3,
             spaceBetween: 30,
           },

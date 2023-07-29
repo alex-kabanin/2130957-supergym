@@ -66,18 +66,18 @@
 }
 
 .staff__swiper {
-  width: 1160px;
+  max-width: 1160px;
 
   @media (max-width: 1351px) {
-    width: 840px;
+    max-width: 840px;
   }
 
   @include mixins.vp-tablet {
-    width: 566px;
+    max-width: 566px;
   }
 
   @include mixins.vp-mobile {
-    width: 226px;
+    max-width: 226px;
   }
 }
 
