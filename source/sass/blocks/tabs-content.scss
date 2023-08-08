@@ -60,7 +60,7 @@
   @include mixins.vp-tablet {
     justify-content: center;
     gap: 41px;
-    grid-template-columns: 442px;
+    grid-template-columns: 1fr;
   }
 
   @include mixins.vp-mobile {

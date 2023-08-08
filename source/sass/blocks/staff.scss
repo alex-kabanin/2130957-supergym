@@ -67,22 +67,9 @@
 
 .staff__swiper {
   max-width: 1160px;
-
-  @media (max-width: 1351px) {
-    max-width: 840px;
-  }
-
-  @include mixins.vp-tablet {
-    max-width: 566px;
-  }
-
-  @include mixins.vp-mobile {
-    max-width: 226px;
-  }
 }
 
 .staff__button-container {
   position: relative;
-  width: min-content;
   margin: 0 auto;
 }

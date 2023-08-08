@@ -43,3 +43,13 @@
     line-height: 38px;
   }
 }
+
+.subscription__container {
+  @include mixins.vp-tablet {
+    padding: 0 163px;
+  }
+
+  @include mixins.vp-mobile {
+    padding: 0 15px;
+  }
+}

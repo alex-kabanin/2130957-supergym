@@ -17,6 +17,10 @@
   position: relative;
   width: min-content;
   margin: 0 auto;
+
+  @include mixins.vp-mobile {
+    width: 78%;
+  }
 }
 
 .reviews__button-prev,
@@ -41,7 +45,7 @@
   }
 
   @include mixins.vp-mobile {
-    width: 226px;
+    width: 100%;
   }
 }
 

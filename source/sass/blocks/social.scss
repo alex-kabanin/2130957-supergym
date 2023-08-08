@@ -1,11 +1,18 @@
 @use "../variables";
+@use "../mixins";
 
 .social {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100px;
   gap: 11px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include mixins.vp-mobile {
+    max-width: 100%;
+  }
 }
 
 .social__link {

@@ -6,9 +6,10 @@ const initTrainersSlider = () => {
   if (staffSwiper) {
     (() =>
       new Swiper('.staff__swiper', {
+        direction: 'horizontal',
         loop: true,
         slidesPerView: 1,
-        direction: 'horizontal',
+        loopedSlides: 0,
         loopFillGroupWithBlank: true,
         watchSlidesProgress: true,
         observer: true,
@@ -19,17 +20,12 @@ const initTrainersSlider = () => {
         breakpoints: {
           320: {
             slidesPerView: 1,
-            spaceBetween: 20,
           },
           768: {
             slidesPerView: 2,
             spaceBetween: 30,
           },
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1352: {
+          1199: {
             slidesPerView: 4,
             spaceBetween: 40,
           },

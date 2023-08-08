@@ -12,14 +12,23 @@
   position: relative;
   text-align: center;
   color: variables.$color-default-white;
-
+  aspect-ratio: 260/294;
   overflow: hidden;
+
+  @include mixins.vp-tablet {
+    aspect-ratio: 268/294;
+  }
+
+  @include mixins.vp-mobile {
+    aspect-ratio: 226/274;
+  }
 }
 
 .trainer h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  white-space: nowrap;
 }
 
 .trainer p {
@@ -31,16 +40,16 @@
 
 .trainer__wrapper {
   position: absolute;
-  top: 192px;
+  top: 66%;
   width: 100%;
   height: 100%;
   padding: 56px 46px 58px 44px;
   background-color: transparent;
   transition: all variables.$trans-default;
+  overflow: auto;
 
   @include mixins.vp-mobile {
     padding: 45px 25px 48px 25px;
-    top: 177px;
   }
 }
 
@@ -83,17 +92,16 @@
 }
 
 .trainer img {
-  width: 260px;
-  height: 294px;
+  width: 100%;
+  aspect-ratio: 260/294;
   object-fit: cover;
 
   @include mixins.vp-tablet {
-    width: 268px;
+    aspect-ratio: 268/294;
   }
 
   @include mixins.vp-mobile {
-    width: 226px;
-    height: 274px;
+    aspect-ratio: 226/274;
   }
 }
 

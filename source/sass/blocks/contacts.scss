@@ -183,10 +183,7 @@
   @include mixins.vp-tablet {
     grid-template-columns: 1fr 1fr;
     gap: 19px 97px;
-
-    &::before {
-      left: calc(55% - 10px);
-    }
+    width: max-content;
   }
 
   @include mixins.vp-mobile {

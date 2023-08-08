@@ -151,8 +151,9 @@
   font-weight: 700;
   line-height: 1;
   color: transparent;
-  background-image: linear-gradient(to right bottom, #d10a42 0, #0041ca 87%);
+  background: linear-gradient(127.61deg, #d10a42 0, #0041ca 65.58%);
   background-clip: text;
+  width: min-content;
 
   @include mixins.vp-tablet {
     font-size: 58px;
@@ -160,7 +161,7 @@
   }
 
   @include mixins.vp-mobile {
-    margin-bottom: -4px;
+    margin: 0 auto -4px;
   }
 }
 
