@@ -57,6 +57,7 @@
 .offers__item {
   display: flex;
   flex-direction: column;
+  min-height: 211px;
   padding: 17px 28px 20px;
   border: 7px solid transparent;
   border-image: linear-gradient(149deg, #ed0233 1%, #003eb7 100%) 1;
@@ -72,8 +73,6 @@
   }
 
   @include mixins.vp-tablet {
-    min-height: 211px;
-
     &--large {
       grid-template-columns: 1fr 399px;
       grid-column: 1/3;

@@ -2,7 +2,6 @@
 @use "../mixins";
 
 .hero {
-  position: relative;
   padding: 51px 0;
   color: variables.$color-default-white;
   background-image: conic-gradient(from 130.31deg at calc(50% - 465px) 257px, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
@@ -20,40 +19,55 @@
 
 .hero .hero__container {
   display: flex;
+
+  @include mixins.vp-tablet {
+    justify-content: center;
+  }
 }
 
 .hero p {
+  position: absolute;
   max-width: 113px;
-  margin: 306px 18px 0;
+  left: -130px;
+  top: 185px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: right;
 
   @include mixins.vp-tablet {
-    margin: 188px 23px 0 0;
+    left: -136px;
+    top: 140px;
   }
 
   @include mixins.vp-mobile {
-    position: absolute;
-    margin: 155px 0 0 0;
+    left: 0;
+    top: 127px;
   }
 }
 
 .hero__content {
-  margin-top: 121px;
-  margin-right: 64px;
+  margin: 121px 64px 0 149px;
   max-width: 247px;
 
   @include mixins.vp-tablet {
-    margin-top: 48px;
-    margin-right: 30px;
+    margin: 48px 30px 0 136px;
     max-width: 188px;
   }
 
   @include mixins.vp-mobile {
     margin: 23px 0 0 auto;
     min-width: 100%;
+  }
+}
+
+.hero__text {
+  position: relative;
+
+  @include mixins.vp-mobile {
+    position: relative;
+    max-width: 304px;
+    margin-left: auto;
   }
 }
 

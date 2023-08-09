@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
   list-style: none;
@@ -59,4 +58,13 @@
     margin-top: 5px;
     width: 69px;
   }
+}
+
+.navigation__list--submenu {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navigation__item {
+  min-width: 119px;
 }

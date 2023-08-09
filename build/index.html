@@ -30,7 +30,11 @@
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="tel:88005555555">8-800-555-55-55</a>
+            <ul class="navigation__list navigation__list--submenu">
+              <li class="navigation__item">
+                <a class="navigation__link" href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -38,10 +42,12 @@
     <main class="main-container">
       <section class="hero">
         <div class="hero__container container">
-          <p>Тренажёрный зал <br>Групповые занятия<br>Кардио-зона </p>
           <div class="hero__content">
-            <h5>Омск</h5>
-            <h1>Фитнес <br>центр</h1>
+            <div class="hero__text">
+              <p>Тренажёрный зал <br>Групповые занятия<br>Кардио-зона </p>
+              <h5>Омск</h5>
+              <h1>Фитнес <br>центр</h1>
+            </div>
             <a class="hero__btn btn" data-hero-btn href="#subscription">Купить абонемент</a>
           </div>
           <picture>
@@ -537,7 +543,7 @@
             <fieldset>
               <label data-required data-validate-type="text" data-message-base="Введите имя">
                 <span class="visually-hidden">Имя.</span>
-                <input id="first-name" type="text" name="first-name" minlength="2" maxlength="20" placeholder="Имя" required oninput="this.value=this.value.replace(/[^а-яА-ЯЁё]/g, '');">
+                <input id="first-name" type="text" name="first-name" minlength="2" maxlength="30" placeholder="Имя" required oninput="this.value=this.value.replace(/[^а-яА-ЯЁёa-zA-Z -]/g, '');">
               </label>
               <label data-required data-validate-type="phone" data-message-base="Введите телефон">
                 <span class="visually-hidden">Телефон.</span>

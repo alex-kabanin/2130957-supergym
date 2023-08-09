@@ -39,6 +39,7 @@ const initTrainersSlider = () => {
       new Swiper('.reviews__swiper', {
         loop: false,
         slidesPerView: 1,
+        autoHeight: true,
         navigation: {
           nextEl: '.reviews__button-next',
           prevEl: '.reviews__button-prev',

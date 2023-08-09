@@ -95,8 +95,12 @@
     }
   }
 
+  @include mixins.vp-tablet {
+    padding: 53px 118px 60px;
+  }
+
   @include mixins.vp-mobile {
-    padding: 43px 20px 48px;
+    padding: 43px 42px 48px;
   }
 }
 
@@ -199,4 +203,8 @@
   margin: 0 auto;
   width: 206px;
   padding: 27px;
+
+  @include mixins.vp-tablet {
+    width: 100%;
+  }
 }
